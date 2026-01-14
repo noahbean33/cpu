@@ -1,12 +1,12 @@
-`include "cpu.v"
-`include "progmem.v"
+`include "cpu.sv"
+`include "progmem.sv"
 module top(
-    input rst, clk,
-    output [31:0] cycle
+    input logic rst, clk,
+    output logic [31:0] cycle
   );
-  wire [31:0] mem_rdata, mem_wdata, addr;
-  wire rstrb;
-  wire [3:0] wr_strobe;
+  logic [31:0] mem_rdata, mem_wdata, addr;
+  logic rstrb;
+  logic [3:0] wr_strobe;
   
   //Instantiate sub modules
   cpu cpu0(
