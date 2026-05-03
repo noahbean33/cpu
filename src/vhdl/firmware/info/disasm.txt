@@ -1,0 +1,83 @@
+
+firmware.elf:     file format elf32-littleriscv
+
+
+Disassembly of section .text:
+
+00000000 <_reset>:
+   0:	04000eb7          	lui	x29,0x4000
+   4:	00100f13          	addi	x30,x0,1
+   8:	01eea023          	sw	x30,0(x29) # 4000000 <_stack_top+0x1ffffa0>
+   c:	02000117          	auipc	x2,0x2000
+  10:	05410113          	addi	x2,x2,84 # 2000060 <_stack_top>
+  14:	00300f13          	addi	x30,x0,3
+  18:	01eea023          	sw	x30,0(x29)
+  1c:	01000297          	auipc	x5,0x1000
+  20:	ff028293          	addi	x5,x5,-16 # 100000c <_erodata>
+  24:	02000317          	auipc	x6,0x2000
+  28:	fdc30313          	addi	x6,x6,-36 # 2000000 <_ebss>
+  2c:	02000397          	auipc	x7,0x2000
+  30:	fd438393          	addi	x7,x7,-44 # 2000000 <_ebss>
+  34:	00730c63          	beq	x6,x7,4c <_reset+0x4c>
+  38:	0002ae03          	lw	x28,0(x5)
+  3c:	01c32023          	sw	x28,0(x6)
+  40:	00428293          	addi	x5,x5,4
+  44:	00430313          	addi	x6,x6,4
+  48:	fedff06f          	jal	x0,34 <_reset+0x34>
+  4c:	00700f13          	addi	x30,x0,7
+  50:	01eea023          	sw	x30,0(x29)
+  54:	02000317          	auipc	x6,0x2000
+  58:	fac30313          	addi	x6,x6,-84 # 2000000 <_ebss>
+  5c:	02000397          	auipc	x7,0x2000
+  60:	fa438393          	addi	x7,x7,-92 # 2000000 <_ebss>
+  64:	00000e13          	addi	x28,x0,0
+  68:	00730863          	beq	x6,x7,78 <_reset+0x78>
+  6c:	01c32023          	sw	x28,0(x6)
+  70:	00430313          	addi	x6,x6,4
+  74:	ff5ff06f          	jal	x0,68 <_reset+0x68>
+  78:	00f00f13          	addi	x30,x0,15
+  7c:	01eea023          	sw	x30,0(x29)
+  80:	01f00f13          	addi	x30,x0,31
+  84:	01eea023          	sw	x30,0(x29)
+  88:	078000ef          	jal	x1,100 <main>
+  8c:	07f00f13          	addi	x30,x0,127
+  90:	01eea023          	sw	x30,0(x29)
+  94:	0000006f          	jal	x0,94 <_reset+0x94>
+
+00000098 <putchar>:
+  98:	00a00793          	addi	x15,x0,10
+  9c:	00f50863          	beq	x10,x15,ac <putchar+0x14>
+  a0:	030007b7          	lui	x15,0x3000
+  a4:	00a7a423          	sw	x10,8(x15) # 3000008 <_stack_top+0xffffa8>
+  a8:	00008067          	jalr	x0,0(x1)
+  ac:	030007b7          	lui	x15,0x3000
+  b0:	00d00713          	addi	x14,x0,13
+  b4:	00e7a423          	sw	x14,8(x15) # 3000008 <_stack_top+0xffffa8>
+  b8:	030007b7          	lui	x15,0x3000
+  bc:	00a7a423          	sw	x10,8(x15) # 3000008 <_stack_top+0xffffa8>
+  c0:	00008067          	jalr	x0,0(x1)
+
+000000c4 <print>:
+  c4:	08050613          	addi	x12,x10,128
+  c8:	00a00693          	addi	x13,x0,10
+  cc:	03000737          	lui	x14,0x3000
+  d0:	00d00593          	addi	x11,x0,13
+  d4:	00c0006f          	jal	x0,e0 <print+0x1c>
+  d8:	00f72423          	sw	x15,8(x14) # 3000008 <_stack_top+0xffffa8>
+  dc:	02a60063          	beq	x12,x10,fc <print+0x38>
+  e0:	00054783          	lbu	x15,0(x10)
+  e4:	00150513          	addi	x10,x10,1
+  e8:	00078a63          	beq	x15,x0,fc <print+0x38>
+  ec:	fed796e3          	bne	x15,x13,d8 <print+0x14>
+  f0:	00b72423          	sw	x11,8(x14)
+  f4:	00f72423          	sw	x15,8(x14)
+  f8:	fea614e3          	bne	x12,x10,e0 <print+0x1c>
+  fc:	00008067          	jalr	x0,0(x1)
+
+00000100 <main>:
+ 100:	030007b7          	lui	x15,0x3000
+ 104:	20800713          	addi	x14,x0,520
+ 108:	01000537          	lui	x10,0x1000
+ 10c:	00e7a223          	sw	x14,4(x15) # 3000004 <_stack_top+0xffffa4>
+ 110:	00050513          	addi	x10,x10,0 # 1000000 <_srodata>
+ 114:	fb1ff06f          	jal	x0,c4 <print>

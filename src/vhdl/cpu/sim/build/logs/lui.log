@@ -1,0 +1,200 @@
+# vsim -c -quiet work.tb_cpu -do "run -all; quit -f" -l build/logs/lui.log -gMAX_CYCLES=200000 
+# Start time: 00:28:57 on Jan 01,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# //  Questa Sim-64
+# //  Version 2020.3_1 linux_x86_64 Aug 25 2020
+# //
+# //  Copyright 1991-2020 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# ** Note: ** Addr=00000000, Word=0, Instuction=00000093, Mnemonic=addi x1, x0, 00000000
+# ** Note: ** Addr=00000004, Word=1, Instuction=00000113, Mnemonic=addi x2, x0, 00000000
+# ** Note: ** Addr=00000008, Word=2, Instuction=00000193, Mnemonic=addi x3, x0, 00000000
+# ** Note: ** Addr=0000000C, Word=3, Instuction=00000213, Mnemonic=addi x4, x0, 00000000
+# ** Note: ** Addr=00000010, Word=4, Instuction=00000293, Mnemonic=addi x5, x0, 00000000
+# ** Note: ** Addr=00000014, Word=5, Instuction=00000313, Mnemonic=addi x6, x0, 00000000
+# ** Note: ** Addr=00000018, Word=6, Instuction=00000393, Mnemonic=addi x7, x0, 00000000
+# ** Note: ** Addr=0000001C, Word=7, Instuction=00000413, Mnemonic=addi x8, x0, 00000000
+# ** Note: ** Addr=00000020, Word=8, Instuction=00000493, Mnemonic=addi x9, x0, 00000000
+# ** Note: ** Addr=00000024, Word=9, Instuction=00000513, Mnemonic=addi x10, x0, 00000000
+# ** Note: ** Addr=00000028, Word=10, Instuction=00000593, Mnemonic=addi x11, x0, 00000000
+# ** Note: ** Addr=0000002C, Word=11, Instuction=00000613, Mnemonic=addi x12, x0, 00000000
+# ** Note: ** Addr=00000030, Word=12, Instuction=00000693, Mnemonic=addi x13, x0, 00000000
+# ** Note: ** Addr=00000034, Word=13, Instuction=00000713, Mnemonic=addi x14, x0, 00000000
+# ** Note: ** Addr=00000038, Word=14, Instuction=00000793, Mnemonic=addi x15, x0, 00000000
+# ** Note: ** Addr=0000003C, Word=15, Instuction=00000813, Mnemonic=addi x16, x0, 00000000
+# ** Note: ** Addr=00000040, Word=16, Instuction=00000893, Mnemonic=addi x17, x0, 00000000
+# ** Note: ** Addr=00000044, Word=17, Instuction=00000913, Mnemonic=addi x18, x0, 00000000
+# ** Note: ** Addr=00000048, Word=18, Instuction=00000993, Mnemonic=addi x19, x0, 00000000
+# ** Note: ** Addr=0000004C, Word=19, Instuction=00000A13, Mnemonic=addi x20, x0, 00000000
+# ** Note: ** Addr=00000050, Word=20, Instuction=00000A93, Mnemonic=addi x21, x0, 00000000
+# ** Note: ** Addr=00000054, Word=21, Instuction=00000B13, Mnemonic=addi x22, x0, 00000000
+# ** Note: ** Addr=00000058, Word=22, Instuction=00000B93, Mnemonic=addi x23, x0, 00000000
+# ** Note: ** Addr=0000005C, Word=23, Instuction=00000C13, Mnemonic=addi x24, x0, 00000000
+# ** Note: ** Addr=00000060, Word=24, Instuction=00000C93, Mnemonic=addi x25, x0, 00000000
+# ** Note: ** Addr=00000064, Word=25, Instuction=00000D13, Mnemonic=addi x26, x0, 00000000
+# ** Note: ** Addr=00000068, Word=26, Instuction=00000D93, Mnemonic=addi x27, x0, 00000000
+# ** Note: ** Addr=0000006C, Word=27, Instuction=00000E13, Mnemonic=addi x28, x0, 00000000
+# ** Note: ** Addr=00000070, Word=28, Instuction=00000E93, Mnemonic=addi x29, x0, 00000000
+# ** Note: ** Addr=00000074, Word=29, Instuction=00000F13, Mnemonic=addi x30, x0, 00000000
+# ** Note: ** Addr=00000078, Word=30, Instuction=00000F93, Mnemonic=addi x31, x0, 00000000
+# ** Note: ** Addr=0000007C, Word=31, Instuction=00001297, Mnemonic=auipc x5, 00001000
+# ** Note:   x5=0000107C 
+# ** Note: ** Addr=00000080, Word=32, Instuction=F8428293, Mnemonic=addi x5, x5, FFFFFF84
+# ** Note:   x5=00001000 
+# ** Note: ** Addr=00000084, Word=33, Instuction=00002317, Mnemonic=auipc x6, 00002000
+# ** Note:   x5=00001000 x6=00002084 
+# ** Note: ** Addr=00000088, Word=34, Instuction=F7C30313, Mnemonic=addi x6, x6, FFFFFF7C
+# ** Note:   x5=00001000 x6=00002000 
+# ** Note: ** Addr=0000008C, Word=35, Instuction=00002397, Mnemonic=auipc x7, 00002000
+# ** Note:   x5=00001000 x6=00002000 x7=0000208C 
+# ** Note: ** Addr=00000090, Word=36, Instuction=F7438393, Mnemonic=addi x7, x7, FFFFFF74
+# ** Note:   x5=00001000 x6=00002000 x7=00002000 
+# ** Note: ** Addr=00000094, Word=37, Instuction=00730C63, Mnemonic=beq x6, x7, 00000018
+# ** Note:   x5=00001000 x6=00002000 x7=00002000 
+# ** Note: ** Addr=000000AC, Word=43, Instuction=00002297, Mnemonic=auipc x5, 00002000
+# ** Note:   x5=000020AC x6=00002000 x7=00002000 
+# ** Note: ** Addr=000000B0, Word=44, Instuction=F5428293, Mnemonic=addi x5, x5, FFFFFF54
+# ** Note:   x5=00002000 x6=00002000 x7=00002000 
+# ** Note: ** Addr=000000B4, Word=45, Instuction=00002317, Mnemonic=auipc x6, 00002000
+# ** Note:   x5=00002000 x6=000020B4 x7=00002000 
+# ** Note: ** Addr=000000B8, Word=46, Instuction=F4C30313, Mnemonic=addi x6, x6, FFFFFF4C
+# ** Note:   x5=00002000 x6=00002000 x7=00002000 
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -6 is not in bounds of subtype NATURAL.
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -6 is not in bounds of subtype NATURAL.
+# ** Note: ** Addr=000000BC, Word=47, Instuction=00000393, Mnemonic=addi x7, x0, 00000000
+# ** Note:   x5=00002000 x6=00002000 
+# ** Note: ** Addr=000000C0, Word=48, Instuction=00628863, Mnemonic=beq x5, x6, 00000010
+# ** Note:   x5=00002000 x6=00002000 
+# ** Note: ** Addr=000000D0, Word=52, Instuction=00200193, Mnemonic=addi x3, x0, 00000002
+# ** Note:   x3=00000002 x5=00002000 x6=00002000 
+# ** Note: ** Addr=000000D4, Word=53, Instuction=000000B7, Mnemonic=lui x1, 00000000
+# ** Note:   x3=00000002 x5=00002000 x6=00002000 
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -72 is not in bounds of subtype NATURAL.
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -72 is not in bounds of subtype NATURAL.
+# ** Note: ** Addr=000000D8, Word=54, Instuction=00000393, Mnemonic=addi x7, x0, 00000000
+# ** Note:   x3=00000002 x5=00002000 x6=00002000 
+# ** Note: ** Addr=000000DC, Word=55, Instuction=04709A63, Mnemonic=bne x1, x7, 00000054
+# ** Note:   x3=00000002 x5=00002000 x6=00002000 
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -2 is not in bounds of subtype NATURAL.
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -2 is not in bounds of subtype NATURAL.
+# ** Note: ** Addr=000000E0, Word=56, Instuction=00300193, Mnemonic=addi x3, x0, 00000003
+# ** Note:   x3=00000003 x5=00002000 x6=00002000 
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -2048 is not in bounds of subtype NATURAL.
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -2048 is not in bounds of subtype NATURAL.
+# ** Note: ** Addr=000000E4, Word=57, Instuction=FFFFF0B7, Mnemonic=lui x1, FFFFF000
+# ** Note:   x1=FFFFF000 x3=00000003 x5=00002000 x6=00002000 
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -1024 is not in bounds of subtype NATURAL.
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -1024 is not in bounds of subtype NATURAL.
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -4096 is not in bounds of subtype NATURAL.
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -4096 is not in bounds of subtype NATURAL.
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -2048 is not in bounds of subtype NATURAL.
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -2048 is not in bounds of subtype NATURAL.
+# ** Note: ** Addr=000000E8, Word=58, Instuction=4010D093, Mnemonic=srai x1, x1, 1
+# ** Note:   x1=FFFFF800 x3=00000003 x5=00002000 x6=00002000 
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -72 is not in bounds of subtype NATURAL.
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -72 is not in bounds of subtype NATURAL.
+# ** Note: ** Addr=000000EC, Word=59, Instuction=80000393, Mnemonic=addi x7, x0, FFFFF800
+# ** Note:   x1=FFFFF800 x3=00000003 x5=00002000 x6=00002000 x7=FFFFF800 
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -4096 is not in bounds of subtype NATURAL.
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -4096 is not in bounds of subtype NATURAL.
+# ** Note: ** Addr=000000F0, Word=60, Instuction=04709063, Mnemonic=bne x1, x7, 00000040
+# ** Note:   x1=FFFFF800 x3=00000003 x5=00002000 x6=00002000 x7=FFFFF800 
+# ** Note: ** Addr=000000F4, Word=61, Instuction=00400193, Mnemonic=addi x3, x0, 00000004
+# ** Note:   x1=FFFFF800 x3=00000004 x5=00002000 x6=00002000 x7=FFFFF800 
+# ** Note: ** Addr=000000F8, Word=62, Instuction=7FFFF0B7, Mnemonic=lui x1, 7FFFF000
+# ** Note:   x1=7FFFF000 x3=00000004 x5=00002000 x6=00002000 x7=FFFFF800 
+# ** Note: ** Addr=000000FC, Word=63, Instuction=4140D093, Mnemonic=srai x1, x1, 20
+# ** Note:   x1=000007FF x3=00000004 x5=00002000 x6=00002000 x7=FFFFF800 
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -40 is not in bounds of subtype NATURAL.
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -40 is not in bounds of subtype NATURAL.
+# ** Note: ** Addr=00000100, Word=64, Instuction=7FF00393, Mnemonic=addi x7, x0, 000007FF
+# ** Note:   x1=000007FF x3=00000004 x5=00002000 x6=00002000 x7=000007FF 
+# ** Note: ** Addr=00000104, Word=65, Instuction=02709663, Mnemonic=bne x1, x7, 0000002C
+# ** Note:   x1=000007FF x3=00000004 x5=00002000 x6=00002000 x7=000007FF 
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -2048 is not in bounds of subtype NATURAL.
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -2048 is not in bounds of subtype NATURAL.
+# ** Note: ** Addr=00000108, Word=66, Instuction=00500193, Mnemonic=addi x3, x0, 00000005
+# ** Note:   x1=000007FF x3=00000005 x5=00002000 x6=00002000 x7=000007FF 
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -2048 is not in bounds of subtype NATURAL.
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -2048 is not in bounds of subtype NATURAL.
+# ** Note: ** Addr=0000010C, Word=67, Instuction=800000B7, Mnemonic=lui x1, 80000000
+# ** Note:   x1=80000000 x3=00000005 x5=00002000 x6=00002000 x7=000007FF 
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -2 is not in bounds of subtype NATURAL.
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -2 is not in bounds of subtype NATURAL.
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -4096 is not in bounds of subtype NATURAL.
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -4096 is not in bounds of subtype NATURAL.
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -2048 is not in bounds of subtype NATURAL.
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -2048 is not in bounds of subtype NATURAL.
+# ** Note: ** Addr=00000110, Word=68, Instuction=4140D093, Mnemonic=srai x1, x1, 20
+# ** Note:   x1=FFFFF800 x3=00000005 x5=00002000 x6=00002000 x7=000007FF 
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -8 is not in bounds of subtype NATURAL.
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -8 is not in bounds of subtype NATURAL.
+# ** Note: ** Addr=00000114, Word=69, Instuction=80000393, Mnemonic=addi x7, x0, FFFFF800
+# ** Note:   x1=FFFFF800 x3=00000005 x5=00002000 x6=00002000 x7=FFFFF800 
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -4096 is not in bounds of subtype NATURAL.
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -4096 is not in bounds of subtype NATURAL.
+# ** Note: ** Addr=00000118, Word=70, Instuction=00709C63, Mnemonic=bne x1, x7, 00000018
+# ** Note:   x1=FFFFF800 x3=00000005 x5=00002000 x6=00002000 x7=FFFFF800 
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -2048 is not in bounds of subtype NATURAL.
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -2048 is not in bounds of subtype NATURAL.
+# ** Note: ** Addr=0000011C, Word=71, Instuction=00600193, Mnemonic=addi x3, x0, 00000006
+# ** Note:   x1=FFFFF800 x3=00000006 x5=00002000 x6=00002000 x7=FFFFF800 
+# ** Note: ** Addr=00000120, Word=72, Instuction=80000037, Mnemonic=lui x0, 80000000
+# ** Note:   x1=FFFFF800 x3=00000006 x5=00002000 x6=00002000 x7=FFFFF800 
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -8 is not in bounds of subtype NATURAL.
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -8 is not in bounds of subtype NATURAL.
+# ** Note: ** Addr=00000124, Word=73, Instuction=00000393, Mnemonic=addi x7, x0, 00000000
+# ** Note:   x1=FFFFF800 x3=00000006 x5=00002000 x6=00002000 
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -6 is not in bounds of subtype NATURAL.
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -6 is not in bounds of subtype NATURAL.
+# ** Note: ** Addr=00000128, Word=74, Instuction=00701463, Mnemonic=bne x0, x7, 00000008
+# ** Note:   x1=FFFFF800 x3=00000006 x5=00002000 x6=00002000 
+# ** Note: ** Addr=0000012C, Word=75, Instuction=00301E63, Mnemonic=bne x0, x3, 0000001C
+# ** Note:   x1=FFFFF800 x3=00000006 x5=00002000 x6=00002000 
+# ** Note: ** Addr=00000148, Word=82, Instuction=00100193, Mnemonic=addi x3, x0, 00000001
+# ** Note:   x1=FFFFF800 x3=00000001 x5=00002000 x6=00002000 
+# ** Note: ** Addr=0000014C, Word=83, Instuction=10100513, Mnemonic=addi x10, x0, 00000101
+# ** Note:   x1=FFFFF800 x3=00000001 x5=00002000 x6=00002000 x10=00000101 
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -2048 is not in bounds of subtype NATURAL.
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -2048 is not in bounds of subtype NATURAL.
+# ** Note: ** Addr=00000150, Word=84, Instuction=01F01013, Mnemonic=slli x0, x0, 1F
+# ** Note:   x1=FFFFF800 x3=00000001 x5=00002000 x6=00002000 x10=00000101 
+# ** Note: ** Addr=00000154, Word=85, Instuction=00100073, Mnemonic=ebreak
+# ** Note:   x1=FFFFF800 x3=00000001 x5=00002000 x6=00002000 x10=00000101 
+# ** Note: RVTEST (addi) : OK
+# Break in Process monitor at ../testbench/tb_cpu.vhd line 359
+# Stopped at ../testbench/tb_cpu.vhd line 359
+#  quit -f
+# End time: 00:28:58 on Jan 01,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 63

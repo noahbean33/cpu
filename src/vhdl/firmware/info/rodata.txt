@@ -1,0 +1,5 @@
+
+firmware.elf:     file format elf32-littleriscv
+
+Contents of section .rodata:
+ 1000000 426f6f74 696e672e 2e000000           Booting.....    

@@ -1,0 +1,98 @@
+
+rv32ui/auipc.elf:     file format elf32-littleriscv
+
+
+Disassembly of section .text:
+
+00000000 <_start>:
+   0:	00000093          	addi	x1,x0,0
+   4:	00000113          	addi	x2,x0,0
+   8:	00000193          	addi	x3,x0,0
+   c:	00000213          	addi	x4,x0,0
+  10:	00000293          	addi	x5,x0,0
+  14:	00000313          	addi	x6,x0,0
+  18:	00000393          	addi	x7,x0,0
+  1c:	00000413          	addi	x8,x0,0
+  20:	00000493          	addi	x9,x0,0
+  24:	00000513          	addi	x10,x0,0
+  28:	00000593          	addi	x11,x0,0
+  2c:	00000613          	addi	x12,x0,0
+  30:	00000693          	addi	x13,x0,0
+  34:	00000713          	addi	x14,x0,0
+  38:	00000793          	addi	x15,x0,0
+  3c:	00000813          	addi	x16,x0,0
+  40:	00000893          	addi	x17,x0,0
+  44:	00000913          	addi	x18,x0,0
+  48:	00000993          	addi	x19,x0,0
+  4c:	00000a13          	addi	x20,x0,0
+  50:	00000a93          	addi	x21,x0,0
+  54:	00000b13          	addi	x22,x0,0
+  58:	00000b93          	addi	x23,x0,0
+  5c:	00000c13          	addi	x24,x0,0
+  60:	00000c93          	addi	x25,x0,0
+  64:	00000d13          	addi	x26,x0,0
+  68:	00000d93          	addi	x27,x0,0
+  6c:	00000e13          	addi	x28,x0,0
+  70:	00000e93          	addi	x29,x0,0
+  74:	00000f13          	addi	x30,x0,0
+  78:	00000f93          	addi	x31,x0,0
+  7c:	01000297          	auipc	x5,0x1000
+  80:	f8428293          	addi	x5,x5,-124 # 1000000 <_erodata>
+  84:	02000317          	auipc	x6,0x2000
+  88:	f7c30313          	addi	x6,x6,-132 # 2000000 <_ebss>
+  8c:	02000397          	auipc	x7,0x2000
+  90:	f7438393          	addi	x7,x7,-140 # 2000000 <_ebss>
+  94:	00730c63          	beq	x6,x7,ac <_start+0xac>
+  98:	0002ae03          	lw	x28,0(x5)
+  9c:	01c32023          	sw	x28,0(x6)
+  a0:	00428293          	addi	x5,x5,4
+  a4:	00430313          	addi	x6,x6,4
+  a8:	fedff06f          	jal	x0,94 <_start+0x94>
+  ac:	02000297          	auipc	x5,0x2000
+  b0:	f5428293          	addi	x5,x5,-172 # 2000000 <_ebss>
+  b4:	02000317          	auipc	x6,0x2000
+  b8:	f4c30313          	addi	x6,x6,-180 # 2000000 <_ebss>
+  bc:	00000393          	addi	x7,x0,0
+  c0:	00628863          	beq	x5,x6,d0 <test_2>
+  c4:	0072a023          	sw	x7,0(x5)
+  c8:	00428293          	addi	x5,x5,4
+  cc:	ff5ff06f          	jal	x0,c0 <_start+0xc0>
+
+000000d0 <test_2>:
+  d0:	00200193          	addi	x3,x0,2
+  d4:	00000013          	addi	x0,x0,0
+  d8:	00002517          	auipc	x10,0x2
+  dc:	71c50513          	addi	x10,x10,1820 # 27f4 <_etext+0x2674>
+  e0:	004005ef          	jal	x11,e4 <test_2+0x14>
+  e4:	40b50533          	sub	x10,x10,x11
+  e8:	000023b7          	lui	x7,0x2
+  ec:	71038393          	addi	x7,x7,1808 # 2710 <_etext+0x2590>
+  f0:	02751463          	bne	x10,x7,118 <fail>
+
+000000f4 <test_3>:
+  f4:	00300193          	addi	x3,x0,3
+  f8:	ffffe517          	auipc	x10,0xffffe
+  fc:	8fc50513          	addi	x10,x10,-1796 # ffffd9f4 <_stack_top+0xfdffc9f4>
+ 100:	004005ef          	jal	x11,104 <test_3+0x10>
+ 104:	40b50533          	sub	x10,x10,x11
+ 108:	ffffe3b7          	lui	x7,0xffffe
+ 10c:	8f038393          	addi	x7,x7,-1808 # ffffd8f0 <_stack_top+0xfdffc8f0>
+ 110:	00751463          	bne	x10,x7,118 <fail>
+ 114:	00301e63          	bne	x0,x3,130 <pass>
+
+00000118 <fail>:
+ 118:	00018063          	beq	x3,x0,118 <fail>
+ 11c:	00018593          	addi	x11,x3,0
+ 120:	10200513          	addi	x10,x0,258
+ 124:	01f01013          	slli	x0,x0,0x1f
+ 128:	00100073          	ebreak
+ 12c:	40705013          	srai	x0,x0,0x7
+
+00000130 <pass>:
+ 130:	00100193          	addi	x3,x0,1
+ 134:	10100513          	addi	x10,x0,257
+ 138:	01f01013          	slli	x0,x0,0x1f
+ 13c:	00100073          	ebreak
+ 140:	40705013          	srai	x0,x0,0x7
+ 144:	00100073          	ebreak
+	...

@@ -1,0 +1,700 @@
+# vsim -c -quiet work.tb_cpu -do "run -all; quit -f" -l build/logs/lhu.log -gMAX_CYCLES=200000 
+# Start time: 00:29:11 on Jan 01,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# //  Questa Sim-64
+# //  Version 2020.3_1 linux_x86_64 Aug 25 2020
+# //
+# //  Copyright 1991-2020 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# ** Note: ** Addr=00000000, Word=0, Instuction=00000093, Mnemonic=addi x1, x0, 00000000
+# ** Note: ** Addr=00000004, Word=1, Instuction=00000113, Mnemonic=addi x2, x0, 00000000
+# ** Note: ** Addr=00000008, Word=2, Instuction=00000193, Mnemonic=addi x3, x0, 00000000
+# ** Note: ** Addr=0000000C, Word=3, Instuction=00000213, Mnemonic=addi x4, x0, 00000000
+# ** Note: ** Addr=00000010, Word=4, Instuction=00000293, Mnemonic=addi x5, x0, 00000000
+# ** Note: ** Addr=00000014, Word=5, Instuction=00000313, Mnemonic=addi x6, x0, 00000000
+# ** Note: ** Addr=00000018, Word=6, Instuction=00000393, Mnemonic=addi x7, x0, 00000000
+# ** Note: ** Addr=0000001C, Word=7, Instuction=00000413, Mnemonic=addi x8, x0, 00000000
+# ** Note: ** Addr=00000020, Word=8, Instuction=00000493, Mnemonic=addi x9, x0, 00000000
+# ** Note: ** Addr=00000024, Word=9, Instuction=00000513, Mnemonic=addi x10, x0, 00000000
+# ** Note: ** Addr=00000028, Word=10, Instuction=00000593, Mnemonic=addi x11, x0, 00000000
+# ** Note: ** Addr=0000002C, Word=11, Instuction=00000613, Mnemonic=addi x12, x0, 00000000
+# ** Note: ** Addr=00000030, Word=12, Instuction=00000693, Mnemonic=addi x13, x0, 00000000
+# ** Note: ** Addr=00000034, Word=13, Instuction=00000713, Mnemonic=addi x14, x0, 00000000
+# ** Note: ** Addr=00000038, Word=14, Instuction=00000793, Mnemonic=addi x15, x0, 00000000
+# ** Note: ** Addr=0000003C, Word=15, Instuction=00000813, Mnemonic=addi x16, x0, 00000000
+# ** Note: ** Addr=00000040, Word=16, Instuction=00000893, Mnemonic=addi x17, x0, 00000000
+# ** Note: ** Addr=00000044, Word=17, Instuction=00000913, Mnemonic=addi x18, x0, 00000000
+# ** Note: ** Addr=00000048, Word=18, Instuction=00000993, Mnemonic=addi x19, x0, 00000000
+# ** Note: ** Addr=0000004C, Word=19, Instuction=00000A13, Mnemonic=addi x20, x0, 00000000
+# ** Note: ** Addr=00000050, Word=20, Instuction=00000A93, Mnemonic=addi x21, x0, 00000000
+# ** Note: ** Addr=00000054, Word=21, Instuction=00000B13, Mnemonic=addi x22, x0, 00000000
+# ** Note: ** Addr=00000058, Word=22, Instuction=00000B93, Mnemonic=addi x23, x0, 00000000
+# ** Note: ** Addr=0000005C, Word=23, Instuction=00000C13, Mnemonic=addi x24, x0, 00000000
+# ** Note: ** Addr=00000060, Word=24, Instuction=00000C93, Mnemonic=addi x25, x0, 00000000
+# ** Note: ** Addr=00000064, Word=25, Instuction=00000D13, Mnemonic=addi x26, x0, 00000000
+# ** Note: ** Addr=00000068, Word=26, Instuction=00000D93, Mnemonic=addi x27, x0, 00000000
+# ** Note: ** Addr=0000006C, Word=27, Instuction=00000E13, Mnemonic=addi x28, x0, 00000000
+# ** Note: ** Addr=00000070, Word=28, Instuction=00000E93, Mnemonic=addi x29, x0, 00000000
+# ** Note: ** Addr=00000074, Word=29, Instuction=00000F13, Mnemonic=addi x30, x0, 00000000
+# ** Note: ** Addr=00000078, Word=30, Instuction=00000F93, Mnemonic=addi x31, x0, 00000000
+# ** Note: ** Addr=0000007C, Word=31, Instuction=00001297, Mnemonic=auipc x5, 00001000
+# ** Note:   x5=0000107C 
+# ** Note: ** Addr=00000080, Word=32, Instuction=F8428293, Mnemonic=addi x5, x5, FFFFFF84
+# ** Note:   x5=00001000 
+# ** Note: ** Addr=00000084, Word=33, Instuction=00002317, Mnemonic=auipc x6, 00002000
+# ** Note:   x5=00001000 x6=00002084 
+# ** Note: ** Addr=00000088, Word=34, Instuction=F7C30313, Mnemonic=addi x6, x6, FFFFFF7C
+# ** Note:   x5=00001000 x6=00002000 
+# ** Note: ** Addr=0000008C, Word=35, Instuction=00002397, Mnemonic=auipc x7, 00002000
+# ** Note:   x5=00001000 x6=00002000 x7=0000208C 
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -16 is not in bounds of subtype NATURAL.
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -16 is not in bounds of subtype NATURAL.
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -16 is not in bounds of subtype NATURAL.
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -16 is not in bounds of subtype NATURAL.
+# ** Note: ** Addr=00000090, Word=36, Instuction=F8438393, Mnemonic=addi x7, x7, FFFFFF84
+# ** Note:   x5=00001000 x6=00002000 x7=00002010 
+# ** Note: ** Addr=00000094, Word=37, Instuction=00730C63, Mnemonic=beq x6, x7, 00000018
+# ** Note:   x5=00001000 x6=00002000 x7=00002010 
+# ** Note: ** Addr=00000098, Word=38, Instuction=0002AE03, Mnemonic=lw x28, 00000000(x5)
+# ** Note:   x5=00001000 x6=00002000 x7=00002010 x28=FF0000FF 
+# ** Note:   Addr=00001000, Word=1024, WData=00000000, RData=FF0000FF
+# ** Note: ** Addr=0000009C, Word=39, Instuction=01C32023, Mnemonic=sw x28, 00000000(x6)
+# ** Note:   x5=00001000 x6=00002000 x7=00002010 x28=FF0000FF 
+# ** Note:   Addr=00002000, Word=2048, WData=FF0000FF, RData=XXXXXXXX
+# ** Note: ** Addr=000000A0, Word=40, Instuction=00428293, Mnemonic=addi x5, x5, 00000004
+# ** Note:   x5=00001004 x6=00002000 x7=00002010 x28=FF0000FF 
+# ** Note: ** Addr=000000A4, Word=41, Instuction=00430313, Mnemonic=addi x6, x6, 00000004
+# ** Note:   x5=00001004 x6=00002004 x7=00002010 x28=FF0000FF 
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -12 is not in bounds of subtype NATURAL.
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -12 is not in bounds of subtype NATURAL.
+# ** Note: ** Addr=000000A8, Word=42, Instuction=FEDFF06F, Mnemonic=jal x0, FFFFFFEC
+# ** Note:   x5=00001004 x6=00002004 x7=00002010 x28=FF0000FF 
+# ** Note: ** Addr=00000094, Word=37, Instuction=00730C63, Mnemonic=beq x6, x7, 00000018
+# ** Note:   x5=00001004 x6=00002004 x7=00002010 x28=FF0000FF 
+# ** Note: ** Addr=00000098, Word=38, Instuction=0002AE03, Mnemonic=lw x28, 00000000(x5)
+# ** Note:   x5=00001004 x6=00002004 x7=00002010 x28=F00F0FF0 
+# ** Note:   Addr=00001004, Word=1025, WData=00000000, RData=F00F0FF0
+# ** Note: ** Addr=0000009C, Word=39, Instuction=01C32023, Mnemonic=sw x28, 00000000(x6)
+# ** Note:   x5=00001004 x6=00002004 x7=00002010 x28=F00F0FF0 
+# ** Note:   Addr=00002004, Word=2049, WData=F00F0FF0, RData=XXXXXXXX
+# ** Note: ** Addr=000000A0, Word=40, Instuction=00428293, Mnemonic=addi x5, x5, 00000004
+# ** Note:   x5=00001008 x6=00002004 x7=00002010 x28=F00F0FF0 
+# ** Note: ** Addr=000000A4, Word=41, Instuction=00430313, Mnemonic=addi x6, x6, 00000004
+# ** Note:   x5=00001008 x6=00002008 x7=00002010 x28=F00F0FF0 
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -8 is not in bounds of subtype NATURAL.
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -8 is not in bounds of subtype NATURAL.
+# ** Note: ** Addr=000000A8, Word=42, Instuction=FEDFF06F, Mnemonic=jal x0, FFFFFFEC
+# ** Note:   x5=00001008 x6=00002008 x7=00002010 x28=F00F0FF0 
+# ** Note: ** Addr=00000094, Word=37, Instuction=00730C63, Mnemonic=beq x6, x7, 00000018
+# ** Note:   x5=00001008 x6=00002008 x7=00002010 x28=F00F0FF0 
+# ** Note: ** Addr=00000098, Word=38, Instuction=0002AE03, Mnemonic=lw x28, 00000000(x5)
+# ** Note:   x5=00001008 x6=00002008 x7=00002010 
+# ** Note:   Addr=00001008, Word=1026, WData=00000000, RData=00000000
+# ** Note: ** Addr=0000009C, Word=39, Instuction=01C32023, Mnemonic=sw x28, 00000000(x6)
+# ** Note:   x5=00001008 x6=00002008 x7=00002010 
+# ** Note:   Addr=00002008, Word=2050, WData=00000000, RData=XXXXXXXX
+# ** Note: ** Addr=000000A0, Word=40, Instuction=00428293, Mnemonic=addi x5, x5, 00000004
+# ** Note:   x5=0000100C x6=00002008 x7=00002010 
+# ** Note: ** Addr=000000A4, Word=41, Instuction=00430313, Mnemonic=addi x6, x6, 00000004
+# ** Note:   x5=0000100C x6=0000200C x7=00002010 
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -4 is not in bounds of subtype NATURAL.
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -4 is not in bounds of subtype NATURAL.
+# ** Note: ** Addr=000000A8, Word=42, Instuction=FEDFF06F, Mnemonic=jal x0, FFFFFFEC
+# ** Note:   x5=0000100C x6=0000200C x7=00002010 
+# ** Note: ** Addr=00000094, Word=37, Instuction=00730C63, Mnemonic=beq x6, x7, 00000018
+# ** Note:   x5=0000100C x6=0000200C x7=00002010 
+# ** Note: ** Addr=00000098, Word=38, Instuction=0002AE03, Mnemonic=lw x28, 00000000(x5)
+# ** Note:   x5=0000100C x6=0000200C x7=00002010 
+# ** Note:   Addr=0000100C, Word=1027, WData=00000000, RData=00000000
+# ** Note: ** Addr=0000009C, Word=39, Instuction=01C32023, Mnemonic=sw x28, 00000000(x6)
+# ** Note:   x5=0000100C x6=0000200C x7=00002010 
+# ** Note:   Addr=0000200C, Word=2051, WData=00000000, RData=XXXXXXXX
+# ** Note: ** Addr=000000A0, Word=40, Instuction=00428293, Mnemonic=addi x5, x5, 00000004
+# ** Note:   x5=00001010 x6=0000200C x7=00002010 
+# ** Note: ** Addr=000000A4, Word=41, Instuction=00430313, Mnemonic=addi x6, x6, 00000004
+# ** Note:   x5=00001010 x6=00002010 x7=00002010 
+# ** Note: ** Addr=000000A8, Word=42, Instuction=FEDFF06F, Mnemonic=jal x0, FFFFFFEC
+# ** Note:   x5=00001010 x6=00002010 x7=00002010 
+# ** Note: ** Addr=00000094, Word=37, Instuction=00730C63, Mnemonic=beq x6, x7, 00000018
+# ** Note:   x5=00001010 x6=00002010 x7=00002010 
+# ** Note: ** Addr=000000AC, Word=43, Instuction=00002297, Mnemonic=auipc x5, 00002000
+# ** Note:   x5=000020AC x6=00002010 x7=00002010 
+# ** Note: ** Addr=000000B0, Word=44, Instuction=F6428293, Mnemonic=addi x5, x5, FFFFFF64
+# ** Note:   x5=00002010 x6=00002010 x7=00002010 
+# ** Note: ** Addr=000000B4, Word=45, Instuction=00002317, Mnemonic=auipc x6, 00002000
+# ** Note:   x5=00002010 x6=000020B4 x7=00002010 
+# ** Note: ** Addr=000000B8, Word=46, Instuction=F5C30313, Mnemonic=addi x6, x6, FFFFFF5C
+# ** Note:   x5=00002010 x6=00002010 x7=00002010 
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -6 is not in bounds of subtype NATURAL.
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -6 is not in bounds of subtype NATURAL.
+# ** Note: ** Addr=000000BC, Word=47, Instuction=00000393, Mnemonic=addi x7, x0, 00000000
+# ** Note:   x5=00002010 x6=00002010 
+# ** Note: ** Addr=000000C0, Word=48, Instuction=00628863, Mnemonic=beq x5, x6, 00000010
+# ** Note:   x5=00002010 x6=00002010 
+# ** Note: ** Addr=000000D0, Word=52, Instuction=00200193, Mnemonic=addi x3, x0, 00000002
+# ** Note:   x3=00000002 x5=00002010 x6=00002010 
+# ** Note: ** Addr=000000D4, Word=53, Instuction=0FF00793, Mnemonic=addi x15, x0, 000000FF
+# ** Note:   x3=00000002 x5=00002010 x6=00002010 x15=000000FF 
+# ** Note: ** Addr=000000D8, Word=54, Instuction=00002117, Mnemonic=auipc x2, 00002000
+# ** Note:   x2=000020D8 x3=00000002 x5=00002010 x6=00002010 x15=000000FF 
+# ** Note: ** Addr=000000DC, Word=55, Instuction=F2810113, Mnemonic=addi x2, x2, FFFFFF28
+# ** Note:   x2=00002000 x3=00000002 x5=00002010 x6=00002010 x15=000000FF 
+# ** Note: ** Addr=000000E0, Word=56, Instuction=00015703, Mnemonic=lhu x14, 00000000(x2)
+# ** Note:   x2=00002000 x3=00000002 x5=00002010 x6=00002010 x14=000000FF x15=000000FF 
+# ** Note:   Addr=00002000, Word=2048, WData=00000000, RData=000000FF
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -680 is not in bounds of subtype NATURAL.
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -680 is not in bounds of subtype NATURAL.
+# ** Note: ** Addr=000000E4, Word=57, Instuction=0FF00393, Mnemonic=addi x7, x0, 000000FF
+# ** Note:   x2=00002000 x3=00000002 x5=00002010 x6=00002010 x7=000000FF x14=000000FF x15=000000FF 
+# ** Note: ** Addr=000000E8, Word=58, Instuction=2A771063, Mnemonic=bne x14, x7, 000002A0
+# ** Note:   x2=00002000 x3=00000002 x5=00002010 x6=00002010 x7=000000FF x14=000000FF x15=000000FF 
+# ** Note: ** Addr=000000EC, Word=59, Instuction=00300193, Mnemonic=addi x3, x0, 00000003
+# ** Note:   x2=00002000 x3=00000003 x5=00002010 x6=00002010 x7=000000FF x14=000000FF x15=000000FF 
+# ** Note: ** Addr=000000F0, Word=60, Instuction=000107B7, Mnemonic=lui x15, 00010000
+# ** Note:   x2=00002000 x3=00000003 x5=00002010 x6=00002010 x7=000000FF x14=000000FF x15=00010000 
+# ** Note: ** Addr=000000F4, Word=61, Instuction=F0078793, Mnemonic=addi x15, x15, FFFFFF00
+# ** Note:   x2=00002000 x3=00000003 x5=00002010 x6=00002010 x7=000000FF x14=000000FF x15=0000FF00 
+# ** Note: ** Addr=000000F8, Word=62, Instuction=00002117, Mnemonic=auipc x2, 00002000
+# ** Note:   x2=000020F8 x3=00000003 x5=00002010 x6=00002010 x7=000000FF x14=000000FF x15=0000FF00 
+# ** Note: ** Addr=000000FC, Word=63, Instuction=F0810113, Mnemonic=addi x2, x2, FFFFFF08
+# ** Note:   x2=00002000 x3=00000003 x5=00002010 x6=00002010 x7=000000FF x14=000000FF x15=0000FF00 
+# ** Note: ** Addr=00000100, Word=64, Instuction=00215703, Mnemonic=lhu x14, 00000002(x2)
+# ** Note:   x2=00002000 x3=00000003 x5=00002010 x6=00002010 x7=000000FF x14=0000FF00 x15=0000FF00 
+# ** Note:   Addr=00002002, Word=2048, WData=00002000, RData=0000FF00
+# ** Note: ** Addr=00000104, Word=65, Instuction=000103B7, Mnemonic=lui x7, 00010000
+# ** Note:   x2=00002000 x3=00000003 x5=00002010 x6=00002010 x7=00010000 x14=0000FF00 x15=0000FF00 
+# ** Note: ** Addr=00000108, Word=66, Instuction=F0038393, Mnemonic=addi x7, x7, FFFFFF00
+# ** Note:   x2=00002000 x3=00000003 x5=00002010 x6=00002010 x7=0000FF00 x14=0000FF00 x15=0000FF00 
+# ** Note: ** Addr=0000010C, Word=67, Instuction=26771E63, Mnemonic=bne x14, x7, 0000027C
+# ** Note:   x2=00002000 x3=00000003 x5=00002010 x6=00002010 x7=0000FF00 x14=0000FF00 x15=0000FF00 
+# ** Note: ** Addr=00000110, Word=68, Instuction=00400193, Mnemonic=addi x3, x0, 00000004
+# ** Note:   x2=00002000 x3=00000004 x5=00002010 x6=00002010 x7=0000FF00 x14=0000FF00 x15=0000FF00 
+# ** Note: ** Addr=00000114, Word=69, Instuction=000017B7, Mnemonic=lui x15, 00001000
+# ** Note:   x2=00002000 x3=00000004 x5=00002010 x6=00002010 x7=0000FF00 x14=0000FF00 x15=00001000 
+# ** Note: ** Addr=00000118, Word=70, Instuction=FF078793, Mnemonic=addi x15, x15, FFFFFFF0
+# ** Note:   x2=00002000 x3=00000004 x5=00002010 x6=00002010 x7=0000FF00 x14=0000FF00 x15=00000FF0 
+# ** Note: ** Addr=0000011C, Word=71, Instuction=00002117, Mnemonic=auipc x2, 00002000
+# ** Note:   x2=0000211C x3=00000004 x5=00002010 x6=00002010 x7=0000FF00 x14=0000FF00 x15=00000FF0 
+# ** Note: ** Addr=00000120, Word=72, Instuction=EE410113, Mnemonic=addi x2, x2, FFFFFEE4
+# ** Note:   x2=00002000 x3=00000004 x5=00002010 x6=00002010 x7=0000FF00 x14=0000FF00 x15=00000FF0 
+# ** Note: ** Addr=00000124, Word=73, Instuction=00415703, Mnemonic=lhu x14, 00000004(x2)
+# ** Note:   x2=00002000 x3=00000004 x5=00002010 x6=00002010 x7=0000FF00 x14=00000FF0 x15=00000FF0 
+# ** Note:   Addr=00002004, Word=2049, WData=00000000, RData=00000FF0
+# ** Note: ** Addr=00000128, Word=74, Instuction=000013B7, Mnemonic=lui x7, 00001000
+# ** Note:   x2=00002000 x3=00000004 x5=00002010 x6=00002010 x7=00001000 x14=00000FF0 x15=00000FF0 
+# ** Note: ** Addr=0000012C, Word=75, Instuction=FF038393, Mnemonic=addi x7, x7, FFFFFFF0
+# ** Note:   x2=00002000 x3=00000004 x5=00002010 x6=00002010 x7=00000FF0 x14=00000FF0 x15=00000FF0 
+# ** Note: ** Addr=00000130, Word=76, Instuction=24771C63, Mnemonic=bne x14, x7, 00000258
+# ** Note:   x2=00002000 x3=00000004 x5=00002010 x6=00002010 x7=00000FF0 x14=00000FF0 x15=00000FF0 
+# ** Note: ** Addr=00000134, Word=77, Instuction=00500193, Mnemonic=addi x3, x0, 00000005
+# ** Note:   x2=00002000 x3=00000005 x5=00002010 x6=00002010 x7=00000FF0 x14=00000FF0 x15=00000FF0 
+# ** Note: ** Addr=00000138, Word=78, Instuction=0000F7B7, Mnemonic=lui x15, 0000F000
+# ** Note:   x2=00002000 x3=00000005 x5=00002010 x6=00002010 x7=00000FF0 x14=00000FF0 x15=0000F000 
+# ** Note: ** Addr=0000013C, Word=79, Instuction=00F78793, Mnemonic=addi x15, x15, 0000000F
+# ** Note:   x2=00002000 x3=00000005 x5=00002010 x6=00002010 x7=00000FF0 x14=00000FF0 x15=0000F00F 
+# ** Note: ** Addr=00000140, Word=80, Instuction=00002117, Mnemonic=auipc x2, 00002000
+# ** Note:   x2=00002140 x3=00000005 x5=00002010 x6=00002010 x7=00000FF0 x14=00000FF0 x15=0000F00F 
+# ** Note: ** Addr=00000144, Word=81, Instuction=EC010113, Mnemonic=addi x2, x2, FFFFFEC0
+# ** Note:   x2=00002000 x3=00000005 x5=00002010 x6=00002010 x7=00000FF0 x14=00000FF0 x15=0000F00F 
+# ** Note: ** Addr=00000148, Word=82, Instuction=00615703, Mnemonic=lhu x14, 00000006(x2)
+# ** Note:   x2=00002000 x3=00000005 x5=00002010 x6=00002010 x7=00000FF0 x14=0000F00F x15=0000F00F 
+# ** Note:   Addr=00002006, Word=2049, WData=00002010, RData=0000F00F
+# ** Note: ** Addr=0000014C, Word=83, Instuction=0000F3B7, Mnemonic=lui x7, 0000F000
+# ** Note:   x2=00002000 x3=00000005 x5=00002010 x6=00002010 x7=0000F000 x14=0000F00F x15=0000F00F 
+# ** Note: ** Addr=00000150, Word=84, Instuction=00F38393, Mnemonic=addi x7, x7, 0000000F
+# ** Note:   x2=00002000 x3=00000005 x5=00002010 x6=00002010 x7=0000F00F x14=0000F00F x15=0000F00F 
+# ** Note: ** Addr=00000154, Word=85, Instuction=22771A63, Mnemonic=bne x14, x7, 00000234
+# ** Note:   x2=00002000 x3=00000005 x5=00002010 x6=00002010 x7=0000F00F x14=0000F00F x15=0000F00F 
+# ** Note: ** Addr=00000158, Word=86, Instuction=00600193, Mnemonic=addi x3, x0, 00000006
+# ** Note:   x2=00002000 x3=00000006 x5=00002010 x6=00002010 x7=0000F00F x14=0000F00F x15=0000F00F 
+# ** Note: ** Addr=0000015C, Word=87, Instuction=0FF00793, Mnemonic=addi x15, x0, 000000FF
+# ** Note:   x2=00002000 x3=00000006 x5=00002010 x6=00002010 x7=0000F00F x14=0000F00F x15=000000FF 
+# ** Note: ** Addr=00000160, Word=88, Instuction=00002117, Mnemonic=auipc x2, 00002000
+# ** Note:   x2=00002160 x3=00000006 x5=00002010 x6=00002010 x7=0000F00F x14=0000F00F x15=000000FF 
+# ** Note: ** Addr=00000164, Word=89, Instuction=EA610113, Mnemonic=addi x2, x2, FFFFFEA6
+# ** Note:   x2=00002006 x3=00000006 x5=00002010 x6=00002010 x7=0000F00F x14=0000F00F x15=000000FF 
+# ** Note: ** Addr=00000168, Word=90, Instuction=FFA15703, Mnemonic=lhu x14, FFFFFFFA(x2)
+# ** Note:   x2=00002006 x3=00000006 x5=00002010 x6=00002010 x7=0000F00F x14=000000FF x15=000000FF 
+# ** Note:   Addr=00002000, Word=2048, WData=00000000, RData=000000FF
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -520 is not in bounds of subtype NATURAL.
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -520 is not in bounds of subtype NATURAL.
+# ** Note: ** Addr=0000016C, Word=91, Instuction=0FF00393, Mnemonic=addi x7, x0, 000000FF
+# ** Note:   x2=00002006 x3=00000006 x5=00002010 x6=00002010 x7=000000FF x14=000000FF x15=000000FF 
+# ** Note: ** Addr=00000170, Word=92, Instuction=20771C63, Mnemonic=bne x14, x7, 00000218
+# ** Note:   x2=00002006 x3=00000006 x5=00002010 x6=00002010 x7=000000FF x14=000000FF x15=000000FF 
+# ** Note: ** Addr=00000174, Word=93, Instuction=00700193, Mnemonic=addi x3, x0, 00000007
+# ** Note:   x2=00002006 x3=00000007 x5=00002010 x6=00002010 x7=000000FF x14=000000FF x15=000000FF 
+# ** Note: ** Addr=00000178, Word=94, Instuction=000107B7, Mnemonic=lui x15, 00010000
+# ** Note:   x2=00002006 x3=00000007 x5=00002010 x6=00002010 x7=000000FF x14=000000FF x15=00010000 
+# ** Note: ** Addr=0000017C, Word=95, Instuction=F0078793, Mnemonic=addi x15, x15, FFFFFF00
+# ** Note:   x2=00002006 x3=00000007 x5=00002010 x6=00002010 x7=000000FF x14=000000FF x15=0000FF00 
+# ** Note: ** Addr=00000180, Word=96, Instuction=00002117, Mnemonic=auipc x2, 00002000
+# ** Note:   x2=00002180 x3=00000007 x5=00002010 x6=00002010 x7=000000FF x14=000000FF x15=0000FF00 
+# ** Note: ** Addr=00000184, Word=97, Instuction=E8610113, Mnemonic=addi x2, x2, FFFFFE86
+# ** Note:   x2=00002006 x3=00000007 x5=00002010 x6=00002010 x7=000000FF x14=000000FF x15=0000FF00 
+# ** Note: ** Addr=00000188, Word=98, Instuction=FFC15703, Mnemonic=lhu x14, FFFFFFFC(x2)
+# ** Note:   x2=00002006 x3=00000007 x5=00002010 x6=00002010 x7=000000FF x14=0000FF00 x15=0000FF00 
+# ** Note:   Addr=00002002, Word=2048, WData=00000000, RData=0000FF00
+# ** Note: ** Addr=0000018C, Word=99, Instuction=000103B7, Mnemonic=lui x7, 00010000
+# ** Note:   x2=00002006 x3=00000007 x5=00002010 x6=00002010 x7=00010000 x14=0000FF00 x15=0000FF00 
+# ** Note: ** Addr=00000190, Word=100, Instuction=F0038393, Mnemonic=addi x7, x7, FFFFFF00
+# ** Note:   x2=00002006 x3=00000007 x5=00002010 x6=00002010 x7=0000FF00 x14=0000FF00 x15=0000FF00 
+# ** Note: ** Addr=00000194, Word=101, Instuction=1E771A63, Mnemonic=bne x14, x7, 000001F4
+# ** Note:   x2=00002006 x3=00000007 x5=00002010 x6=00002010 x7=0000FF00 x14=0000FF00 x15=0000FF00 
+# ** Note: ** Addr=00000198, Word=102, Instuction=00800193, Mnemonic=addi x3, x0, 00000008
+# ** Note:   x2=00002006 x3=00000008 x5=00002010 x6=00002010 x7=0000FF00 x14=0000FF00 x15=0000FF00 
+# ** Note: ** Addr=0000019C, Word=103, Instuction=000017B7, Mnemonic=lui x15, 00001000
+# ** Note:   x2=00002006 x3=00000008 x5=00002010 x6=00002010 x7=0000FF00 x14=0000FF00 x15=00001000 
+# ** Note: ** Addr=000001A0, Word=104, Instuction=FF078793, Mnemonic=addi x15, x15, FFFFFFF0
+# ** Note:   x2=00002006 x3=00000008 x5=00002010 x6=00002010 x7=0000FF00 x14=0000FF00 x15=00000FF0 
+# ** Note: ** Addr=000001A4, Word=105, Instuction=00002117, Mnemonic=auipc x2, 00002000
+# ** Note:   x2=000021A4 x3=00000008 x5=00002010 x6=00002010 x7=0000FF00 x14=0000FF00 x15=00000FF0 
+# ** Note: ** Addr=000001A8, Word=106, Instuction=E6210113, Mnemonic=addi x2, x2, FFFFFE62
+# ** Note:   x2=00002006 x3=00000008 x5=00002010 x6=00002010 x7=0000FF00 x14=0000FF00 x15=00000FF0 
+# ** Note: ** Addr=000001AC, Word=107, Instuction=FFE15703, Mnemonic=lhu x14, FFFFFFFE(x2)
+# ** Note:   x2=00002006 x3=00000008 x5=00002010 x6=00002010 x7=0000FF00 x14=00000FF0 x15=00000FF0 
+# ** Note:   Addr=00002004, Word=2049, WData=00000000, RData=00000FF0
+# ** Note: ** Addr=000001B0, Word=108, Instuction=000013B7, Mnemonic=lui x7, 00001000
+# ** Note:   x2=00002006 x3=00000008 x5=00002010 x6=00002010 x7=00001000 x14=00000FF0 x15=00000FF0 
+# ** Note: ** Addr=000001B4, Word=109, Instuction=FF038393, Mnemonic=addi x7, x7, FFFFFFF0
+# ** Note:   x2=00002006 x3=00000008 x5=00002010 x6=00002010 x7=00000FF0 x14=00000FF0 x15=00000FF0 
+# ** Note: ** Addr=000001B8, Word=110, Instuction=1C771863, Mnemonic=bne x14, x7, 000001D0
+# ** Note:   x2=00002006 x3=00000008 x5=00002010 x6=00002010 x7=00000FF0 x14=00000FF0 x15=00000FF0 
+# ** Note: ** Addr=000001BC, Word=111, Instuction=00900193, Mnemonic=addi x3, x0, 00000009
+# ** Note:   x2=00002006 x3=00000009 x5=00002010 x6=00002010 x7=00000FF0 x14=00000FF0 x15=00000FF0 
+# ** Note: ** Addr=000001C0, Word=112, Instuction=0000F7B7, Mnemonic=lui x15, 0000F000
+# ** Note:   x2=00002006 x3=00000009 x5=00002010 x6=00002010 x7=00000FF0 x14=00000FF0 x15=0000F000 
+# ** Note: ** Addr=000001C4, Word=113, Instuction=00F78793, Mnemonic=addi x15, x15, 0000000F
+# ** Note:   x2=00002006 x3=00000009 x5=00002010 x6=00002010 x7=00000FF0 x14=00000FF0 x15=0000F00F 
+# ** Note: ** Addr=000001C8, Word=114, Instuction=00002117, Mnemonic=auipc x2, 00002000
+# ** Note:   x2=000021C8 x3=00000009 x5=00002010 x6=00002010 x7=00000FF0 x14=00000FF0 x15=0000F00F 
+# ** Note: ** Addr=000001CC, Word=115, Instuction=E3E10113, Mnemonic=addi x2, x2, FFFFFE3E
+# ** Note:   x2=00002006 x3=00000009 x5=00002010 x6=00002010 x7=00000FF0 x14=00000FF0 x15=0000F00F 
+# ** Note: ** Addr=000001D0, Word=116, Instuction=00015703, Mnemonic=lhu x14, 00000000(x2)
+# ** Note:   x2=00002006 x3=00000009 x5=00002010 x6=00002010 x7=00000FF0 x14=0000F00F x15=0000F00F 
+# ** Note:   Addr=00002006, Word=2049, WData=00000000, RData=0000F00F
+# ** Note: ** Addr=000001D4, Word=117, Instuction=0000F3B7, Mnemonic=lui x7, 0000F000
+# ** Note:   x2=00002006 x3=00000009 x5=00002010 x6=00002010 x7=0000F000 x14=0000F00F x15=0000F00F 
+# ** Note: ** Addr=000001D8, Word=118, Instuction=00F38393, Mnemonic=addi x7, x7, 0000000F
+# ** Note:   x2=00002006 x3=00000009 x5=00002010 x6=00002010 x7=0000F00F x14=0000F00F x15=0000F00F 
+# ** Note: ** Addr=000001DC, Word=119, Instuction=1A771663, Mnemonic=bne x14, x7, 000001AC
+# ** Note:   x2=00002006 x3=00000009 x5=00002010 x6=00002010 x7=0000F00F x14=0000F00F x15=0000F00F 
+# ** Note: ** Addr=000001E0, Word=120, Instuction=00A00193, Mnemonic=addi x3, x0, 0000000A
+# ** Note:   x2=00002006 x3=0000000A x5=00002010 x6=00002010 x7=0000F00F x14=0000F00F x15=0000F00F 
+# ** Note: ** Addr=000001E4, Word=121, Instuction=00002097, Mnemonic=auipc x1, 00002000
+# ** Note:   x1=000021E4 x2=00002006 x3=0000000A x5=00002010 x6=00002010 x7=0000F00F x14=0000F00F x15=0000F00F 
+# ** Note: ** Addr=000001E8, Word=122, Instuction=E1C08093, Mnemonic=addi x1, x1, FFFFFE1C
+# ** Note:   x1=00002000 x2=00002006 x3=0000000A x5=00002010 x6=00002010 x7=0000F00F x14=0000F00F x15=0000F00F 
+# ** Note: ** Addr=000001EC, Word=123, Instuction=FE008093, Mnemonic=addi x1, x1, FFFFFFE0
+# ** Note:   x1=00001FE0 x2=00002006 x3=0000000A x5=00002010 x6=00002010 x7=0000F00F x14=0000F00F x15=0000F00F 
+# ** Note: ** Addr=000001F0, Word=124, Instuction=0200D283, Mnemonic=lhu x5, 00000020(x1)
+# ** Note:   x1=00001FE0 x2=00002006 x3=0000000A x5=000000FF x6=00002010 x7=0000F00F x14=0000F00F x15=0000F00F 
+# ** Note:   Addr=00002000, Word=2048, WData=00000000, RData=000000FF
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -392 is not in bounds of subtype NATURAL.
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -392 is not in bounds of subtype NATURAL.
+# ** Note: ** Addr=000001F4, Word=125, Instuction=0FF00393, Mnemonic=addi x7, x0, 000000FF
+# ** Note:   x1=00001FE0 x2=00002006 x3=0000000A x5=000000FF x6=00002010 x7=000000FF x14=0000F00F x15=0000F00F 
+# ** Note: ** Addr=000001F8, Word=126, Instuction=18729863, Mnemonic=bne x5, x7, 00000190
+# ** Note:   x1=00001FE0 x2=00002006 x3=0000000A x5=000000FF x6=00002010 x7=000000FF x14=0000F00F x15=0000F00F 
+# ** Note: ** Addr=000001FC, Word=127, Instuction=00B00193, Mnemonic=addi x3, x0, 0000000B
+# ** Note:   x1=00001FE0 x2=00002006 x3=0000000B x5=000000FF x6=00002010 x7=000000FF x14=0000F00F x15=0000F00F 
+# ** Note: ** Addr=00000200, Word=128, Instuction=00002097, Mnemonic=auipc x1, 00002000
+# ** Note:   x1=00002200 x2=00002006 x3=0000000B x5=000000FF x6=00002010 x7=000000FF x14=0000F00F x15=0000F00F 
+# ** Note: ** Addr=00000204, Word=129, Instuction=E0008093, Mnemonic=addi x1, x1, FFFFFE00
+# ** Note:   x1=00002000 x2=00002006 x3=0000000B x5=000000FF x6=00002010 x7=000000FF x14=0000F00F x15=0000F00F 
+# ** Note: ** Addr=00000208, Word=130, Instuction=FFB08093, Mnemonic=addi x1, x1, FFFFFFFB
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000B x5=000000FF x6=00002010 x7=000000FF x14=0000F00F x15=0000F00F 
+# ** Note: ** Addr=0000020C, Word=131, Instuction=0070D283, Mnemonic=lhu x5, 00000007(x1)
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000B x5=0000FF00 x6=00002010 x7=000000FF x14=0000F00F x15=0000F00F 
+# ** Note:   Addr=00002002, Word=2048, WData=000000FF, RData=0000FF00
+# ** Note: ** Addr=00000210, Word=132, Instuction=000103B7, Mnemonic=lui x7, 00010000
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000B x5=0000FF00 x6=00002010 x7=00010000 x14=0000F00F x15=0000F00F 
+# ** Note: ** Addr=00000214, Word=133, Instuction=F0038393, Mnemonic=addi x7, x7, FFFFFF00
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000B x5=0000FF00 x6=00002010 x7=0000FF00 x14=0000F00F x15=0000F00F 
+# ** Note: ** Addr=00000218, Word=134, Instuction=16729863, Mnemonic=bne x5, x7, 00000170
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000B x5=0000FF00 x6=00002010 x7=0000FF00 x14=0000F00F x15=0000F00F 
+# ** Note: ** Addr=0000021C, Word=135, Instuction=00C00193, Mnemonic=addi x3, x0, 0000000C
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000C x5=0000FF00 x6=00002010 x7=0000FF00 x14=0000F00F x15=0000F00F 
+# ** Note: ** Addr=00000220, Word=136, Instuction=00000213, Mnemonic=addi x4, x0, 00000000
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000C x5=0000FF00 x6=00002010 x7=0000FF00 x14=0000F00F x15=0000F00F 
+# ** Note: ** Addr=00000224, Word=137, Instuction=00002697, Mnemonic=auipc x13, 00002000
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000C x5=0000FF00 x6=00002010 x7=0000FF00 x13=00002224 x14=0000F00F x15=0000F00F 
+# ** Note: ** Addr=00000228, Word=138, Instuction=DDE68693, Mnemonic=addi x13, x13, FFFFFDDE
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000C x5=0000FF00 x6=00002010 x7=0000FF00 x13=00002002 x14=0000F00F x15=0000F00F 
+# ** Note: ** Addr=0000022C, Word=139, Instuction=0026D703, Mnemonic=lhu x14, 00000002(x13)
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000C x5=0000FF00 x6=00002010 x7=0000FF00 x13=00002002 x14=00000FF0 x15=0000F00F 
+# ** Note:   Addr=00002004, Word=2049, WData=00002006, RData=00000FF0
+# ** Note: ** Addr=00000230, Word=140, Instuction=00070313, Mnemonic=addi x6, x14, 00000000
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000C x5=0000FF00 x6=00000FF0 x7=0000FF00 x13=00002002 x14=00000FF0 x15=0000F00F 
+# ** Note: ** Addr=00000234, Word=141, Instuction=000013B7, Mnemonic=lui x7, 00001000
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000C x5=0000FF00 x6=00000FF0 x7=00001000 x13=00002002 x14=00000FF0 x15=0000F00F 
+# ** Note: ** Addr=00000238, Word=142, Instuction=FF038393, Mnemonic=addi x7, x7, FFFFFFF0
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000C x5=0000FF00 x6=00000FF0 x7=00000FF0 x13=00002002 x14=00000FF0 x15=0000F00F 
+# ** Note: ** Addr=0000023C, Word=143, Instuction=14731663, Mnemonic=bne x6, x7, 0000014C
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000C x5=0000FF00 x6=00000FF0 x7=00000FF0 x13=00002002 x14=00000FF0 x15=0000F00F 
+# ** Note: ** Addr=00000240, Word=144, Instuction=00120213, Mnemonic=addi x4, x4, 00000001
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000C x4=00000001 x5=0000FF00 x6=00000FF0 x7=00000FF0 x13=00002002 x14=00000FF0 x15=0000F00F 
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -2 is not in bounds of subtype NATURAL.
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -2 is not in bounds of subtype NATURAL.
+# ** Note: ** Addr=00000244, Word=145, Instuction=00200293, Mnemonic=addi x5, x0, 00000002
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000C x4=00000001 x5=00000002 x6=00000FF0 x7=00000FF0 x13=00002002 x14=00000FF0 x15=0000F00F 
+# ** Note: ** Addr=00000248, Word=146, Instuction=FC521EE3, Mnemonic=bne x4, x5, FFFFFFDC
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000C x4=00000001 x5=00000002 x6=00000FF0 x7=00000FF0 x13=00002002 x14=00000FF0 x15=0000F00F 
+# ** Note: ** Addr=00000224, Word=137, Instuction=00002697, Mnemonic=auipc x13, 00002000
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000C x4=00000001 x5=00000002 x6=00000FF0 x7=00000FF0 x13=00002224 x14=00000FF0 x15=0000F00F 
+# ** Note: ** Addr=00000228, Word=138, Instuction=DDE68693, Mnemonic=addi x13, x13, FFFFFDDE
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000C x4=00000001 x5=00000002 x6=00000FF0 x7=00000FF0 x13=00002002 x14=00000FF0 x15=0000F00F 
+# ** Note: ** Addr=0000022C, Word=139, Instuction=0026D703, Mnemonic=lhu x14, 00000002(x13)
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000C x4=00000001 x5=00000002 x6=00000FF0 x7=00000FF0 x13=00002002 x14=00000FF0 x15=0000F00F 
+# ** Note:   Addr=00002004, Word=2049, WData=00002006, RData=00000FF0
+# ** Note: ** Addr=00000230, Word=140, Instuction=00070313, Mnemonic=addi x6, x14, 00000000
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000C x4=00000001 x5=00000002 x6=00000FF0 x7=00000FF0 x13=00002002 x14=00000FF0 x15=0000F00F 
+# ** Note: ** Addr=00000234, Word=141, Instuction=000013B7, Mnemonic=lui x7, 00001000
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000C x4=00000001 x5=00000002 x6=00000FF0 x7=00001000 x13=00002002 x14=00000FF0 x15=0000F00F 
+# ** Note: ** Addr=00000238, Word=142, Instuction=FF038393, Mnemonic=addi x7, x7, FFFFFFF0
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000C x4=00000001 x5=00000002 x6=00000FF0 x7=00000FF0 x13=00002002 x14=00000FF0 x15=0000F00F 
+# ** Note: ** Addr=0000023C, Word=143, Instuction=14731663, Mnemonic=bne x6, x7, 0000014C
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000C x4=00000001 x5=00000002 x6=00000FF0 x7=00000FF0 x13=00002002 x14=00000FF0 x15=0000F00F 
+# ** Note: ** Addr=00000240, Word=144, Instuction=00120213, Mnemonic=addi x4, x4, 00000001
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000C x4=00000002 x5=00000002 x6=00000FF0 x7=00000FF0 x13=00002002 x14=00000FF0 x15=0000F00F 
+# ** Note: ** Addr=00000244, Word=145, Instuction=00200293, Mnemonic=addi x5, x0, 00000002
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000C x4=00000002 x5=00000002 x6=00000FF0 x7=00000FF0 x13=00002002 x14=00000FF0 x15=0000F00F 
+# ** Note: ** Addr=00000248, Word=146, Instuction=FC521EE3, Mnemonic=bne x4, x5, FFFFFFDC
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000C x4=00000002 x5=00000002 x6=00000FF0 x7=00000FF0 x13=00002002 x14=00000FF0 x15=0000F00F 
+# ** Note: ** Addr=0000024C, Word=147, Instuction=00D00193, Mnemonic=addi x3, x0, 0000000D
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000D x4=00000002 x5=00000002 x6=00000FF0 x7=00000FF0 x13=00002002 x14=00000FF0 x15=0000F00F 
+# ** Note: ** Addr=00000250, Word=148, Instuction=00000213, Mnemonic=addi x4, x0, 00000000
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000D x5=00000002 x6=00000FF0 x7=00000FF0 x13=00002002 x14=00000FF0 x15=0000F00F 
+# ** Note: ** Addr=00000254, Word=149, Instuction=00002697, Mnemonic=auipc x13, 00002000
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000D x5=00000002 x6=00000FF0 x7=00000FF0 x13=00002254 x14=00000FF0 x15=0000F00F 
+# ** Note: ** Addr=00000258, Word=150, Instuction=DB068693, Mnemonic=addi x13, x13, FFFFFDB0
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000D x5=00000002 x6=00000FF0 x7=00000FF0 x13=00002004 x14=00000FF0 x15=0000F00F 
+# ** Note: ** Addr=0000025C, Word=151, Instuction=0026D703, Mnemonic=lhu x14, 00000002(x13)
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000D x5=00000002 x6=00000FF0 x7=00000FF0 x13=00002004 x14=0000F00F x15=0000F00F 
+# ** Note:   Addr=00002006, Word=2049, WData=00002006, RData=0000F00F
+# ** Note: ** Addr=00000260, Word=152, Instuction=00000013, Mnemonic=addi x0, x0, 00000000
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000D x5=00000002 x6=00000FF0 x7=00000FF0 x13=00002004 x14=0000F00F x15=0000F00F 
+# ** Note: ** Addr=00000264, Word=153, Instuction=00070313, Mnemonic=addi x6, x14, 00000000
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000D x5=00000002 x6=0000F00F x7=00000FF0 x13=00002004 x14=0000F00F x15=0000F00F 
+# ** Note: ** Addr=00000268, Word=154, Instuction=0000F3B7, Mnemonic=lui x7, 0000F000
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000D x5=00000002 x6=0000F00F x7=0000F000 x13=00002004 x14=0000F00F x15=0000F00F 
+# ** Note: ** Addr=0000026C, Word=155, Instuction=00F38393, Mnemonic=addi x7, x7, 0000000F
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000D x5=00000002 x6=0000F00F x7=0000F00F x13=00002004 x14=0000F00F x15=0000F00F 
+# ** Note: ** Addr=00000270, Word=156, Instuction=10731C63, Mnemonic=bne x6, x7, 00000118
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000D x5=00000002 x6=0000F00F x7=0000F00F x13=00002004 x14=0000F00F x15=0000F00F 
+# ** Note: ** Addr=00000274, Word=157, Instuction=00120213, Mnemonic=addi x4, x4, 00000001
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000D x4=00000001 x5=00000002 x6=0000F00F x7=0000F00F x13=00002004 x14=0000F00F x15=0000F00F 
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -2 is not in bounds of subtype NATURAL.
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -2 is not in bounds of subtype NATURAL.
+# ** Note: ** Addr=00000278, Word=158, Instuction=00200293, Mnemonic=addi x5, x0, 00000002
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000D x4=00000001 x5=00000002 x6=0000F00F x7=0000F00F x13=00002004 x14=0000F00F x15=0000F00F 
+# ** Note: ** Addr=0000027C, Word=159, Instuction=FC521CE3, Mnemonic=bne x4, x5, FFFFFFD8
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000D x4=00000001 x5=00000002 x6=0000F00F x7=0000F00F x13=00002004 x14=0000F00F x15=0000F00F 
+# ** Note: ** Addr=00000254, Word=149, Instuction=00002697, Mnemonic=auipc x13, 00002000
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000D x4=00000001 x5=00000002 x6=0000F00F x7=0000F00F x13=00002254 x14=0000F00F x15=0000F00F 
+# ** Note: ** Addr=00000258, Word=150, Instuction=DB068693, Mnemonic=addi x13, x13, FFFFFDB0
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000D x4=00000001 x5=00000002 x6=0000F00F x7=0000F00F x13=00002004 x14=0000F00F x15=0000F00F 
+# ** Note: ** Addr=0000025C, Word=151, Instuction=0026D703, Mnemonic=lhu x14, 00000002(x13)
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000D x4=00000001 x5=00000002 x6=0000F00F x7=0000F00F x13=00002004 x14=0000F00F x15=0000F00F 
+# ** Note:   Addr=00002006, Word=2049, WData=00002006, RData=0000F00F
+# ** Note: ** Addr=00000260, Word=152, Instuction=00000013, Mnemonic=addi x0, x0, 00000000
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000D x4=00000001 x5=00000002 x6=0000F00F x7=0000F00F x13=00002004 x14=0000F00F x15=0000F00F 
+# ** Note: ** Addr=00000264, Word=153, Instuction=00070313, Mnemonic=addi x6, x14, 00000000
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000D x4=00000001 x5=00000002 x6=0000F00F x7=0000F00F x13=00002004 x14=0000F00F x15=0000F00F 
+# ** Note: ** Addr=00000268, Word=154, Instuction=0000F3B7, Mnemonic=lui x7, 0000F000
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000D x4=00000001 x5=00000002 x6=0000F00F x7=0000F000 x13=00002004 x14=0000F00F x15=0000F00F 
+# ** Note: ** Addr=0000026C, Word=155, Instuction=00F38393, Mnemonic=addi x7, x7, 0000000F
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000D x4=00000001 x5=00000002 x6=0000F00F x7=0000F00F x13=00002004 x14=0000F00F x15=0000F00F 
+# ** Note: ** Addr=00000270, Word=156, Instuction=10731C63, Mnemonic=bne x6, x7, 00000118
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000D x4=00000001 x5=00000002 x6=0000F00F x7=0000F00F x13=00002004 x14=0000F00F x15=0000F00F 
+# ** Note: ** Addr=00000274, Word=157, Instuction=00120213, Mnemonic=addi x4, x4, 00000001
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000D x4=00000002 x5=00000002 x6=0000F00F x7=0000F00F x13=00002004 x14=0000F00F x15=0000F00F 
+# ** Note: ** Addr=00000278, Word=158, Instuction=00200293, Mnemonic=addi x5, x0, 00000002
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000D x4=00000002 x5=00000002 x6=0000F00F x7=0000F00F x13=00002004 x14=0000F00F x15=0000F00F 
+# ** Note: ** Addr=0000027C, Word=159, Instuction=FC521CE3, Mnemonic=bne x4, x5, FFFFFFD8
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000D x4=00000002 x5=00000002 x6=0000F00F x7=0000F00F x13=00002004 x14=0000F00F x15=0000F00F 
+# ** Note: ** Addr=00000280, Word=160, Instuction=00E00193, Mnemonic=addi x3, x0, 0000000E
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000E x4=00000002 x5=00000002 x6=0000F00F x7=0000F00F x13=00002004 x14=0000F00F x15=0000F00F 
+# ** Note: ** Addr=00000284, Word=161, Instuction=00000213, Mnemonic=addi x4, x0, 00000000
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000E x5=00000002 x6=0000F00F x7=0000F00F x13=00002004 x14=0000F00F x15=0000F00F 
+# ** Note: ** Addr=00000288, Word=162, Instuction=00002697, Mnemonic=auipc x13, 00002000
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000E x5=00000002 x6=0000F00F x7=0000F00F x13=00002288 x14=0000F00F x15=0000F00F 
+# ** Note: ** Addr=0000028C, Word=163, Instuction=D7868693, Mnemonic=addi x13, x13, FFFFFD78
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000E x5=00000002 x6=0000F00F x7=0000F00F x13=00002000 x14=0000F00F x15=0000F00F 
+# ** Note: ** Addr=00000290, Word=164, Instuction=0026D703, Mnemonic=lhu x14, 00000002(x13)
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000E x5=00000002 x6=0000F00F x7=0000F00F x13=00002000 x14=0000FF00 x15=0000F00F 
+# ** Note:   Addr=00002002, Word=2048, WData=00002006, RData=0000FF00
+# ** Note: ** Addr=00000294, Word=165, Instuction=00000013, Mnemonic=addi x0, x0, 00000000
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000E x5=00000002 x6=0000F00F x7=0000F00F x13=00002000 x14=0000FF00 x15=0000F00F 
+# ** Note: ** Addr=00000298, Word=166, Instuction=00000013, Mnemonic=addi x0, x0, 00000000
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000E x5=00000002 x6=0000F00F x7=0000F00F x13=00002000 x14=0000FF00 x15=0000F00F 
+# ** Note: ** Addr=0000029C, Word=167, Instuction=00070313, Mnemonic=addi x6, x14, 00000000
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000E x5=00000002 x6=0000FF00 x7=0000F00F x13=00002000 x14=0000FF00 x15=0000F00F 
+# ** Note: ** Addr=000002A0, Word=168, Instuction=000103B7, Mnemonic=lui x7, 00010000
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000E x5=00000002 x6=0000FF00 x7=00010000 x13=00002000 x14=0000FF00 x15=0000F00F 
+# ** Note: ** Addr=000002A4, Word=169, Instuction=F0038393, Mnemonic=addi x7, x7, FFFFFF00
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000E x5=00000002 x6=0000FF00 x7=0000FF00 x13=00002000 x14=0000FF00 x15=0000F00F 
+# ** Note: ** Addr=000002A8, Word=170, Instuction=0E731063, Mnemonic=bne x6, x7, 000000E0
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000E x5=00000002 x6=0000FF00 x7=0000FF00 x13=00002000 x14=0000FF00 x15=0000F00F 
+# ** Note: ** Addr=000002AC, Word=171, Instuction=00120213, Mnemonic=addi x4, x4, 00000001
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000E x4=00000001 x5=00000002 x6=0000FF00 x7=0000FF00 x13=00002000 x14=0000FF00 x15=0000F00F 
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -2 is not in bounds of subtype NATURAL.
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -2 is not in bounds of subtype NATURAL.
+# ** Note: ** Addr=000002B0, Word=172, Instuction=00200293, Mnemonic=addi x5, x0, 00000002
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000E x4=00000001 x5=00000002 x6=0000FF00 x7=0000FF00 x13=00002000 x14=0000FF00 x15=0000F00F 
+# ** Note: ** Addr=000002B4, Word=173, Instuction=FC521AE3, Mnemonic=bne x4, x5, FFFFFFD4
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000E x4=00000001 x5=00000002 x6=0000FF00 x7=0000FF00 x13=00002000 x14=0000FF00 x15=0000F00F 
+# ** Note: ** Addr=00000288, Word=162, Instuction=00002697, Mnemonic=auipc x13, 00002000
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000E x4=00000001 x5=00000002 x6=0000FF00 x7=0000FF00 x13=00002288 x14=0000FF00 x15=0000F00F 
+# ** Note: ** Addr=0000028C, Word=163, Instuction=D7868693, Mnemonic=addi x13, x13, FFFFFD78
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000E x4=00000001 x5=00000002 x6=0000FF00 x7=0000FF00 x13=00002000 x14=0000FF00 x15=0000F00F 
+# ** Note: ** Addr=00000290, Word=164, Instuction=0026D703, Mnemonic=lhu x14, 00000002(x13)
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000E x4=00000001 x5=00000002 x6=0000FF00 x7=0000FF00 x13=00002000 x14=0000FF00 x15=0000F00F 
+# ** Note:   Addr=00002002, Word=2048, WData=00002006, RData=0000FF00
+# ** Note: ** Addr=00000294, Word=165, Instuction=00000013, Mnemonic=addi x0, x0, 00000000
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000E x4=00000001 x5=00000002 x6=0000FF00 x7=0000FF00 x13=00002000 x14=0000FF00 x15=0000F00F 
+# ** Note: ** Addr=00000298, Word=166, Instuction=00000013, Mnemonic=addi x0, x0, 00000000
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000E x4=00000001 x5=00000002 x6=0000FF00 x7=0000FF00 x13=00002000 x14=0000FF00 x15=0000F00F 
+# ** Note: ** Addr=0000029C, Word=167, Instuction=00070313, Mnemonic=addi x6, x14, 00000000
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000E x4=00000001 x5=00000002 x6=0000FF00 x7=0000FF00 x13=00002000 x14=0000FF00 x15=0000F00F 
+# ** Note: ** Addr=000002A0, Word=168, Instuction=000103B7, Mnemonic=lui x7, 00010000
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000E x4=00000001 x5=00000002 x6=0000FF00 x7=00010000 x13=00002000 x14=0000FF00 x15=0000F00F 
+# ** Note: ** Addr=000002A4, Word=169, Instuction=F0038393, Mnemonic=addi x7, x7, FFFFFF00
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000E x4=00000001 x5=00000002 x6=0000FF00 x7=0000FF00 x13=00002000 x14=0000FF00 x15=0000F00F 
+# ** Note: ** Addr=000002A8, Word=170, Instuction=0E731063, Mnemonic=bne x6, x7, 000000E0
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000E x4=00000001 x5=00000002 x6=0000FF00 x7=0000FF00 x13=00002000 x14=0000FF00 x15=0000F00F 
+# ** Note: ** Addr=000002AC, Word=171, Instuction=00120213, Mnemonic=addi x4, x4, 00000001
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000E x4=00000002 x5=00000002 x6=0000FF00 x7=0000FF00 x13=00002000 x14=0000FF00 x15=0000F00F 
+# ** Note: ** Addr=000002B0, Word=172, Instuction=00200293, Mnemonic=addi x5, x0, 00000002
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000E x4=00000002 x5=00000002 x6=0000FF00 x7=0000FF00 x13=00002000 x14=0000FF00 x15=0000F00F 
+# ** Note: ** Addr=000002B4, Word=173, Instuction=FC521AE3, Mnemonic=bne x4, x5, FFFFFFD4
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000E x4=00000002 x5=00000002 x6=0000FF00 x7=0000FF00 x13=00002000 x14=0000FF00 x15=0000F00F 
+# ** Note: ** Addr=000002B8, Word=174, Instuction=00F00193, Mnemonic=addi x3, x0, 0000000F
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000F x4=00000002 x5=00000002 x6=0000FF00 x7=0000FF00 x13=00002000 x14=0000FF00 x15=0000F00F 
+# ** Note: ** Addr=000002BC, Word=175, Instuction=00000213, Mnemonic=addi x4, x0, 00000000
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000F x5=00000002 x6=0000FF00 x7=0000FF00 x13=00002000 x14=0000FF00 x15=0000F00F 
+# ** Note: ** Addr=000002C0, Word=176, Instuction=00002697, Mnemonic=auipc x13, 00002000
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000F x5=00000002 x6=0000FF00 x7=0000FF00 x13=000022C0 x14=0000FF00 x15=0000F00F 
+# ** Note: ** Addr=000002C4, Word=177, Instuction=D4268693, Mnemonic=addi x13, x13, FFFFFD42
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000F x5=00000002 x6=0000FF00 x7=0000FF00 x13=00002002 x14=0000FF00 x15=0000F00F 
+# ** Note: ** Addr=000002C8, Word=178, Instuction=0026D703, Mnemonic=lhu x14, 00000002(x13)
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000F x5=00000002 x6=0000FF00 x7=0000FF00 x13=00002002 x14=00000FF0 x15=0000F00F 
+# ** Note:   Addr=00002004, Word=2049, WData=00002006, RData=00000FF0
+# ** Note: ** Addr=000002CC, Word=179, Instuction=000013B7, Mnemonic=lui x7, 00001000
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000F x5=00000002 x6=0000FF00 x7=00001000 x13=00002002 x14=00000FF0 x15=0000F00F 
+# ** Note: ** Addr=000002D0, Word=180, Instuction=FF038393, Mnemonic=addi x7, x7, FFFFFFF0
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000F x5=00000002 x6=0000FF00 x7=00000FF0 x13=00002002 x14=00000FF0 x15=0000F00F 
+# ** Note: ** Addr=000002D4, Word=181, Instuction=0A771A63, Mnemonic=bne x14, x7, 000000B4
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000F x5=00000002 x6=0000FF00 x7=00000FF0 x13=00002002 x14=00000FF0 x15=0000F00F 
+# ** Note: ** Addr=000002D8, Word=182, Instuction=00120213, Mnemonic=addi x4, x4, 00000001
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000F x4=00000001 x5=00000002 x6=0000FF00 x7=00000FF0 x13=00002002 x14=00000FF0 x15=0000F00F 
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -2 is not in bounds of subtype NATURAL.
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -2 is not in bounds of subtype NATURAL.
+# ** Note: ** Addr=000002DC, Word=183, Instuction=00200293, Mnemonic=addi x5, x0, 00000002
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000F x4=00000001 x5=00000002 x6=0000FF00 x7=00000FF0 x13=00002002 x14=00000FF0 x15=0000F00F 
+# ** Note: ** Addr=000002E0, Word=184, Instuction=FE5210E3, Mnemonic=bne x4, x5, FFFFFFE0
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000F x4=00000001 x5=00000002 x6=0000FF00 x7=00000FF0 x13=00002002 x14=00000FF0 x15=0000F00F 
+# ** Note: ** Addr=000002C0, Word=176, Instuction=00002697, Mnemonic=auipc x13, 00002000
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000F x4=00000001 x5=00000002 x6=0000FF00 x7=00000FF0 x13=000022C0 x14=00000FF0 x15=0000F00F 
+# ** Note: ** Addr=000002C4, Word=177, Instuction=D4268693, Mnemonic=addi x13, x13, FFFFFD42
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000F x4=00000001 x5=00000002 x6=0000FF00 x7=00000FF0 x13=00002002 x14=00000FF0 x15=0000F00F 
+# ** Note: ** Addr=000002C8, Word=178, Instuction=0026D703, Mnemonic=lhu x14, 00000002(x13)
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000F x4=00000001 x5=00000002 x6=0000FF00 x7=00000FF0 x13=00002002 x14=00000FF0 x15=0000F00F 
+# ** Note:   Addr=00002004, Word=2049, WData=00002006, RData=00000FF0
+# ** Note: ** Addr=000002CC, Word=179, Instuction=000013B7, Mnemonic=lui x7, 00001000
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000F x4=00000001 x5=00000002 x6=0000FF00 x7=00001000 x13=00002002 x14=00000FF0 x15=0000F00F 
+# ** Note: ** Addr=000002D0, Word=180, Instuction=FF038393, Mnemonic=addi x7, x7, FFFFFFF0
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000F x4=00000001 x5=00000002 x6=0000FF00 x7=00000FF0 x13=00002002 x14=00000FF0 x15=0000F00F 
+# ** Note: ** Addr=000002D4, Word=181, Instuction=0A771A63, Mnemonic=bne x14, x7, 000000B4
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000F x4=00000001 x5=00000002 x6=0000FF00 x7=00000FF0 x13=00002002 x14=00000FF0 x15=0000F00F 
+# ** Note: ** Addr=000002D8, Word=182, Instuction=00120213, Mnemonic=addi x4, x4, 00000001
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000F x4=00000002 x5=00000002 x6=0000FF00 x7=00000FF0 x13=00002002 x14=00000FF0 x15=0000F00F 
+# ** Note: ** Addr=000002DC, Word=183, Instuction=00200293, Mnemonic=addi x5, x0, 00000002
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000F x4=00000002 x5=00000002 x6=0000FF00 x7=00000FF0 x13=00002002 x14=00000FF0 x15=0000F00F 
+# ** Note: ** Addr=000002E0, Word=184, Instuction=FE5210E3, Mnemonic=bne x4, x5, FFFFFFE0
+# ** Note:   x1=00001FFB x2=00002006 x3=0000000F x4=00000002 x5=00000002 x6=0000FF00 x7=00000FF0 x13=00002002 x14=00000FF0 x15=0000F00F 
+# ** Note: ** Addr=000002E4, Word=185, Instuction=01000193, Mnemonic=addi x3, x0, 00000010
+# ** Note:   x1=00001FFB x2=00002006 x3=00000010 x4=00000002 x5=00000002 x6=0000FF00 x7=00000FF0 x13=00002002 x14=00000FF0 x15=0000F00F 
+# ** Note: ** Addr=000002E8, Word=186, Instuction=00000213, Mnemonic=addi x4, x0, 00000000
+# ** Note:   x1=00001FFB x2=00002006 x3=00000010 x5=00000002 x6=0000FF00 x7=00000FF0 x13=00002002 x14=00000FF0 x15=0000F00F 
+# ** Note: ** Addr=000002EC, Word=187, Instuction=00002697, Mnemonic=auipc x13, 00002000
+# ** Note:   x1=00001FFB x2=00002006 x3=00000010 x5=00000002 x6=0000FF00 x7=00000FF0 x13=000022EC x14=00000FF0 x15=0000F00F 
+# ** Note: ** Addr=000002F0, Word=188, Instuction=D1868693, Mnemonic=addi x13, x13, FFFFFD18
+# ** Note:   x1=00001FFB x2=00002006 x3=00000010 x5=00000002 x6=0000FF00 x7=00000FF0 x13=00002004 x14=00000FF0 x15=0000F00F 
+# ** Note: ** Addr=000002F4, Word=189, Instuction=00000013, Mnemonic=addi x0, x0, 00000000
+# ** Note:   x1=00001FFB x2=00002006 x3=00000010 x5=00000002 x6=0000FF00 x7=00000FF0 x13=00002004 x14=00000FF0 x15=0000F00F 
+# ** Note: ** Addr=000002F8, Word=190, Instuction=0026D703, Mnemonic=lhu x14, 00000002(x13)
+# ** Note:   x1=00001FFB x2=00002006 x3=00000010 x5=00000002 x6=0000FF00 x7=00000FF0 x13=00002004 x14=0000F00F x15=0000F00F 
+# ** Note:   Addr=00002006, Word=2049, WData=00002006, RData=0000F00F
+# ** Note: ** Addr=000002FC, Word=191, Instuction=0000F3B7, Mnemonic=lui x7, 0000F000
+# ** Note:   x1=00001FFB x2=00002006 x3=00000010 x5=00000002 x6=0000FF00 x7=0000F000 x13=00002004 x14=0000F00F x15=0000F00F 
+# ** Note: ** Addr=00000300, Word=192, Instuction=00F38393, Mnemonic=addi x7, x7, 0000000F
+# ** Note:   x1=00001FFB x2=00002006 x3=00000010 x5=00000002 x6=0000FF00 x7=0000F00F x13=00002004 x14=0000F00F x15=0000F00F 
+# ** Note: ** Addr=00000304, Word=193, Instuction=08771263, Mnemonic=bne x14, x7, 00000084
+# ** Note:   x1=00001FFB x2=00002006 x3=00000010 x5=00000002 x6=0000FF00 x7=0000F00F x13=00002004 x14=0000F00F x15=0000F00F 
+# ** Note: ** Addr=00000308, Word=194, Instuction=00120213, Mnemonic=addi x4, x4, 00000001
+# ** Note:   x1=00001FFB x2=00002006 x3=00000010 x4=00000001 x5=00000002 x6=0000FF00 x7=0000F00F x13=00002004 x14=0000F00F x15=0000F00F 
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -2 is not in bounds of subtype NATURAL.
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -2 is not in bounds of subtype NATURAL.
+# ** Note: ** Addr=0000030C, Word=195, Instuction=00200293, Mnemonic=addi x5, x0, 00000002
+# ** Note:   x1=00001FFB x2=00002006 x3=00000010 x4=00000001 x5=00000002 x6=0000FF00 x7=0000F00F x13=00002004 x14=0000F00F x15=0000F00F 
+# ** Note: ** Addr=00000310, Word=196, Instuction=FC521EE3, Mnemonic=bne x4, x5, FFFFFFDC
+# ** Note:   x1=00001FFB x2=00002006 x3=00000010 x4=00000001 x5=00000002 x6=0000FF00 x7=0000F00F x13=00002004 x14=0000F00F x15=0000F00F 
+# ** Note: ** Addr=000002EC, Word=187, Instuction=00002697, Mnemonic=auipc x13, 00002000
+# ** Note:   x1=00001FFB x2=00002006 x3=00000010 x4=00000001 x5=00000002 x6=0000FF00 x7=0000F00F x13=000022EC x14=0000F00F x15=0000F00F 
+# ** Note: ** Addr=000002F0, Word=188, Instuction=D1868693, Mnemonic=addi x13, x13, FFFFFD18
+# ** Note:   x1=00001FFB x2=00002006 x3=00000010 x4=00000001 x5=00000002 x6=0000FF00 x7=0000F00F x13=00002004 x14=0000F00F x15=0000F00F 
+# ** Note: ** Addr=000002F4, Word=189, Instuction=00000013, Mnemonic=addi x0, x0, 00000000
+# ** Note:   x1=00001FFB x2=00002006 x3=00000010 x4=00000001 x5=00000002 x6=0000FF00 x7=0000F00F x13=00002004 x14=0000F00F x15=0000F00F 
+# ** Note: ** Addr=000002F8, Word=190, Instuction=0026D703, Mnemonic=lhu x14, 00000002(x13)
+# ** Note:   x1=00001FFB x2=00002006 x3=00000010 x4=00000001 x5=00000002 x6=0000FF00 x7=0000F00F x13=00002004 x14=0000F00F x15=0000F00F 
+# ** Note:   Addr=00002006, Word=2049, WData=00002006, RData=0000F00F
+# ** Note: ** Addr=000002FC, Word=191, Instuction=0000F3B7, Mnemonic=lui x7, 0000F000
+# ** Note:   x1=00001FFB x2=00002006 x3=00000010 x4=00000001 x5=00000002 x6=0000FF00 x7=0000F000 x13=00002004 x14=0000F00F x15=0000F00F 
+# ** Note: ** Addr=00000300, Word=192, Instuction=00F38393, Mnemonic=addi x7, x7, 0000000F
+# ** Note:   x1=00001FFB x2=00002006 x3=00000010 x4=00000001 x5=00000002 x6=0000FF00 x7=0000F00F x13=00002004 x14=0000F00F x15=0000F00F 
+# ** Note: ** Addr=00000304, Word=193, Instuction=08771263, Mnemonic=bne x14, x7, 00000084
+# ** Note:   x1=00001FFB x2=00002006 x3=00000010 x4=00000001 x5=00000002 x6=0000FF00 x7=0000F00F x13=00002004 x14=0000F00F x15=0000F00F 
+# ** Note: ** Addr=00000308, Word=194, Instuction=00120213, Mnemonic=addi x4, x4, 00000001
+# ** Note:   x1=00001FFB x2=00002006 x3=00000010 x4=00000002 x5=00000002 x6=0000FF00 x7=0000F00F x13=00002004 x14=0000F00F x15=0000F00F 
+# ** Note: ** Addr=0000030C, Word=195, Instuction=00200293, Mnemonic=addi x5, x0, 00000002
+# ** Note:   x1=00001FFB x2=00002006 x3=00000010 x4=00000002 x5=00000002 x6=0000FF00 x7=0000F00F x13=00002004 x14=0000F00F x15=0000F00F 
+# ** Note: ** Addr=00000310, Word=196, Instuction=FC521EE3, Mnemonic=bne x4, x5, FFFFFFDC
+# ** Note:   x1=00001FFB x2=00002006 x3=00000010 x4=00000002 x5=00000002 x6=0000FF00 x7=0000F00F x13=00002004 x14=0000F00F x15=0000F00F 
+# ** Note: ** Addr=00000314, Word=197, Instuction=01100193, Mnemonic=addi x3, x0, 00000011
+# ** Note:   x1=00001FFB x2=00002006 x3=00000011 x4=00000002 x5=00000002 x6=0000FF00 x7=0000F00F x13=00002004 x14=0000F00F x15=0000F00F 
+# ** Note: ** Addr=00000318, Word=198, Instuction=00000213, Mnemonic=addi x4, x0, 00000000
+# ** Note:   x1=00001FFB x2=00002006 x3=00000011 x5=00000002 x6=0000FF00 x7=0000F00F x13=00002004 x14=0000F00F x15=0000F00F 
+# ** Note: ** Addr=0000031C, Word=199, Instuction=00002697, Mnemonic=auipc x13, 00002000
+# ** Note:   x1=00001FFB x2=00002006 x3=00000011 x5=00000002 x6=0000FF00 x7=0000F00F x13=0000231C x14=0000F00F x15=0000F00F 
+# ** Note: ** Addr=00000320, Word=200, Instuction=CE468693, Mnemonic=addi x13, x13, FFFFFCE4
+# ** Note:   x1=00001FFB x2=00002006 x3=00000011 x5=00000002 x6=0000FF00 x7=0000F00F x13=00002000 x14=0000F00F x15=0000F00F 
+# ** Note: ** Addr=00000324, Word=201, Instuction=00000013, Mnemonic=addi x0, x0, 00000000
+# ** Note:   x1=00001FFB x2=00002006 x3=00000011 x5=00000002 x6=0000FF00 x7=0000F00F x13=00002000 x14=0000F00F x15=0000F00F 
+# ** Note: ** Addr=00000328, Word=202, Instuction=00000013, Mnemonic=addi x0, x0, 00000000
+# ** Note:   x1=00001FFB x2=00002006 x3=00000011 x5=00000002 x6=0000FF00 x7=0000F00F x13=00002000 x14=0000F00F x15=0000F00F 
+# ** Note: ** Addr=0000032C, Word=203, Instuction=0026D703, Mnemonic=lhu x14, 00000002(x13)
+# ** Note:   x1=00001FFB x2=00002006 x3=00000011 x5=00000002 x6=0000FF00 x7=0000F00F x13=00002000 x14=0000FF00 x15=0000F00F 
+# ** Note:   Addr=00002002, Word=2048, WData=00002006, RData=0000FF00
+# ** Note: ** Addr=00000330, Word=204, Instuction=000103B7, Mnemonic=lui x7, 00010000
+# ** Note:   x1=00001FFB x2=00002006 x3=00000011 x5=00000002 x6=0000FF00 x7=00010000 x13=00002000 x14=0000FF00 x15=0000F00F 
+# ** Note: ** Addr=00000334, Word=205, Instuction=F0038393, Mnemonic=addi x7, x7, FFFFFF00
+# ** Note:   x1=00001FFB x2=00002006 x3=00000011 x5=00000002 x6=0000FF00 x7=0000FF00 x13=00002000 x14=0000FF00 x15=0000F00F 
+# ** Note: ** Addr=00000338, Word=206, Instuction=04771863, Mnemonic=bne x14, x7, 00000050
+# ** Note:   x1=00001FFB x2=00002006 x3=00000011 x5=00000002 x6=0000FF00 x7=0000FF00 x13=00002000 x14=0000FF00 x15=0000F00F 
+# ** Note: ** Addr=0000033C, Word=207, Instuction=00120213, Mnemonic=addi x4, x4, 00000001
+# ** Note:   x1=00001FFB x2=00002006 x3=00000011 x4=00000001 x5=00000002 x6=0000FF00 x7=0000FF00 x13=00002000 x14=0000FF00 x15=0000F00F 
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -2 is not in bounds of subtype NATURAL.
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -2 is not in bounds of subtype NATURAL.
+# ** Note: ** Addr=00000340, Word=208, Instuction=00200293, Mnemonic=addi x5, x0, 00000002
+# ** Note:   x1=00001FFB x2=00002006 x3=00000011 x4=00000001 x5=00000002 x6=0000FF00 x7=0000FF00 x13=00002000 x14=0000FF00 x15=0000F00F 
+# ** Note: ** Addr=00000344, Word=209, Instuction=FC521CE3, Mnemonic=bne x4, x5, FFFFFFD8
+# ** Note:   x1=00001FFB x2=00002006 x3=00000011 x4=00000001 x5=00000002 x6=0000FF00 x7=0000FF00 x13=00002000 x14=0000FF00 x15=0000F00F 
+# ** Note: ** Addr=0000031C, Word=199, Instuction=00002697, Mnemonic=auipc x13, 00002000
+# ** Note:   x1=00001FFB x2=00002006 x3=00000011 x4=00000001 x5=00000002 x6=0000FF00 x7=0000FF00 x13=0000231C x14=0000FF00 x15=0000F00F 
+# ** Note: ** Addr=00000320, Word=200, Instuction=CE468693, Mnemonic=addi x13, x13, FFFFFCE4
+# ** Note:   x1=00001FFB x2=00002006 x3=00000011 x4=00000001 x5=00000002 x6=0000FF00 x7=0000FF00 x13=00002000 x14=0000FF00 x15=0000F00F 
+# ** Note: ** Addr=00000324, Word=201, Instuction=00000013, Mnemonic=addi x0, x0, 00000000
+# ** Note:   x1=00001FFB x2=00002006 x3=00000011 x4=00000001 x5=00000002 x6=0000FF00 x7=0000FF00 x13=00002000 x14=0000FF00 x15=0000F00F 
+# ** Note: ** Addr=00000328, Word=202, Instuction=00000013, Mnemonic=addi x0, x0, 00000000
+# ** Note:   x1=00001FFB x2=00002006 x3=00000011 x4=00000001 x5=00000002 x6=0000FF00 x7=0000FF00 x13=00002000 x14=0000FF00 x15=0000F00F 
+# ** Note: ** Addr=0000032C, Word=203, Instuction=0026D703, Mnemonic=lhu x14, 00000002(x13)
+# ** Note:   x1=00001FFB x2=00002006 x3=00000011 x4=00000001 x5=00000002 x6=0000FF00 x7=0000FF00 x13=00002000 x14=0000FF00 x15=0000F00F 
+# ** Note:   Addr=00002002, Word=2048, WData=00002006, RData=0000FF00
+# ** Note: ** Addr=00000330, Word=204, Instuction=000103B7, Mnemonic=lui x7, 00010000
+# ** Note:   x1=00001FFB x2=00002006 x3=00000011 x4=00000001 x5=00000002 x6=0000FF00 x7=00010000 x13=00002000 x14=0000FF00 x15=0000F00F 
+# ** Note: ** Addr=00000334, Word=205, Instuction=F0038393, Mnemonic=addi x7, x7, FFFFFF00
+# ** Note:   x1=00001FFB x2=00002006 x3=00000011 x4=00000001 x5=00000002 x6=0000FF00 x7=0000FF00 x13=00002000 x14=0000FF00 x15=0000F00F 
+# ** Note: ** Addr=00000338, Word=206, Instuction=04771863, Mnemonic=bne x14, x7, 00000050
+# ** Note:   x1=00001FFB x2=00002006 x3=00000011 x4=00000001 x5=00000002 x6=0000FF00 x7=0000FF00 x13=00002000 x14=0000FF00 x15=0000F00F 
+# ** Note: ** Addr=0000033C, Word=207, Instuction=00120213, Mnemonic=addi x4, x4, 00000001
+# ** Note:   x1=00001FFB x2=00002006 x3=00000011 x4=00000002 x5=00000002 x6=0000FF00 x7=0000FF00 x13=00002000 x14=0000FF00 x15=0000F00F 
+# ** Note: ** Addr=00000340, Word=208, Instuction=00200293, Mnemonic=addi x5, x0, 00000002
+# ** Note:   x1=00001FFB x2=00002006 x3=00000011 x4=00000002 x5=00000002 x6=0000FF00 x7=0000FF00 x13=00002000 x14=0000FF00 x15=0000F00F 
+# ** Note: ** Addr=00000344, Word=209, Instuction=FC521CE3, Mnemonic=bne x4, x5, FFFFFFD8
+# ** Note:   x1=00001FFB x2=00002006 x3=00000011 x4=00000002 x5=00000002 x6=0000FF00 x7=0000FF00 x13=00002000 x14=0000FF00 x15=0000F00F 
+# ** Note: ** Addr=00000348, Word=210, Instuction=01200193, Mnemonic=addi x3, x0, 00000012
+# ** Note:   x1=00001FFB x2=00002006 x3=00000012 x4=00000002 x5=00000002 x6=0000FF00 x7=0000FF00 x13=00002000 x14=0000FF00 x15=0000F00F 
+# ** Note: ** Addr=0000034C, Word=211, Instuction=00002297, Mnemonic=auipc x5, 00002000
+# ** Note:   x1=00001FFB x2=00002006 x3=00000012 x4=00000002 x5=0000234C x6=0000FF00 x7=0000FF00 x13=00002000 x14=0000FF00 x15=0000F00F 
+# ** Note: ** Addr=00000350, Word=212, Instuction=CB428293, Mnemonic=addi x5, x5, FFFFFCB4
+# ** Note:   x1=00001FFB x2=00002006 x3=00000012 x4=00000002 x5=00002000 x6=0000FF00 x7=0000FF00 x13=00002000 x14=0000FF00 x15=0000F00F 
+# ** Note: ** Addr=00000354, Word=213, Instuction=0002D103, Mnemonic=lhu x2, 00000000(x5)
+# ** Note:   x1=00001FFB x2=000000FF x3=00000012 x4=00000002 x5=00002000 x6=0000FF00 x7=0000FF00 x13=00002000 x14=0000FF00 x15=0000F00F 
+# ** Note:   Addr=00002000, Word=2048, WData=00000000, RData=000000FF
+# ** Note: ** Addr=00000358, Word=214, Instuction=00200113, Mnemonic=addi x2, x0, 00000002
+# ** Note:   x1=00001FFB x2=00000002 x3=00000012 x4=00000002 x5=00002000 x6=0000FF00 x7=0000FF00 x13=00002000 x14=0000FF00 x15=0000F00F 
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -40 is not in bounds of subtype NATURAL.
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -40 is not in bounds of subtype NATURAL.
+# ** Note: ** Addr=0000035C, Word=215, Instuction=00200393, Mnemonic=addi x7, x0, 00000002
+# ** Note:   x1=00001FFB x2=00000002 x3=00000012 x4=00000002 x5=00002000 x6=0000FF00 x7=00000002 x13=00002000 x14=0000FF00 x15=0000F00F 
+# ** Note: ** Addr=00000360, Word=216, Instuction=02711463, Mnemonic=bne x2, x7, 00000028
+# ** Note:   x1=00001FFB x2=00000002 x3=00000012 x4=00000002 x5=00002000 x6=0000FF00 x7=00000002 x13=00002000 x14=0000FF00 x15=0000F00F 
+# ** Note: ** Addr=00000364, Word=217, Instuction=01300193, Mnemonic=addi x3, x0, 00000013
+# ** Note:   x1=00001FFB x2=00000002 x3=00000013 x4=00000002 x5=00002000 x6=0000FF00 x7=00000002 x13=00002000 x14=0000FF00 x15=0000F00F 
+# ** Note: ** Addr=00000368, Word=218, Instuction=00002297, Mnemonic=auipc x5, 00002000
+# ** Note:   x1=00001FFB x2=00000002 x3=00000013 x4=00000002 x5=00002368 x6=0000FF00 x7=00000002 x13=00002000 x14=0000FF00 x15=0000F00F 
+# ** Note: ** Addr=0000036C, Word=219, Instuction=C9828293, Mnemonic=addi x5, x5, FFFFFC98
+# ** Note:   x1=00001FFB x2=00000002 x3=00000013 x4=00000002 x5=00002000 x6=0000FF00 x7=00000002 x13=00002000 x14=0000FF00 x15=0000F00F 
+# ** Note: ** Addr=00000370, Word=220, Instuction=0002D103, Mnemonic=lhu x2, 00000000(x5)
+# ** Note:   x1=00001FFB x2=000000FF x3=00000013 x4=00000002 x5=00002000 x6=0000FF00 x7=00000002 x13=00002000 x14=0000FF00 x15=0000F00F 
+# ** Note:   Addr=00002000, Word=2048, WData=00000000, RData=000000FF
+# ** Note: ** Addr=00000374, Word=221, Instuction=00000013, Mnemonic=addi x0, x0, 00000000
+# ** Note:   x1=00001FFB x2=000000FF x3=00000013 x4=00000002 x5=00002000 x6=0000FF00 x7=00000002 x13=00002000 x14=0000FF00 x15=0000F00F 
+# ** Note: ** Addr=00000378, Word=222, Instuction=00200113, Mnemonic=addi x2, x0, 00000002
+# ** Note:   x1=00001FFB x2=00000002 x3=00000013 x4=00000002 x5=00002000 x6=0000FF00 x7=00000002 x13=00002000 x14=0000FF00 x15=0000F00F 
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -8 is not in bounds of subtype NATURAL.
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -8 is not in bounds of subtype NATURAL.
+# ** Note: ** Addr=0000037C, Word=223, Instuction=00200393, Mnemonic=addi x7, x0, 00000002
+# ** Note:   x1=00001FFB x2=00000002 x3=00000013 x4=00000002 x5=00002000 x6=0000FF00 x7=00000002 x13=00002000 x14=0000FF00 x15=0000F00F 
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -20 is not in bounds of subtype NATURAL.
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -20 is not in bounds of subtype NATURAL.
+# ** Note: ** Addr=00000380, Word=224, Instuction=00711463, Mnemonic=bne x2, x7, 00000008
+# ** Note:   x1=00001FFB x2=00000002 x3=00000013 x4=00000002 x5=00002000 x6=0000FF00 x7=00000002 x13=00002000 x14=0000FF00 x15=0000F00F 
+# ** Note: ** Addr=00000384, Word=225, Instuction=00301E63, Mnemonic=bne x0, x3, 0000001C
+# ** Note:   x1=00001FFB x2=00000002 x3=00000013 x4=00000002 x5=00002000 x6=0000FF00 x7=00000002 x13=00002000 x14=0000FF00 x15=0000F00F 
+# ** Note: ** Addr=000003A0, Word=232, Instuction=00100193, Mnemonic=addi x3, x0, 00000001
+# ** Note:   x1=00001FFB x2=00000002 x3=00000001 x4=00000002 x5=00002000 x6=0000FF00 x7=00000002 x13=00002000 x14=0000FF00 x15=0000F00F 
+# ** Note: ** Addr=000003A4, Word=233, Instuction=10100513, Mnemonic=addi x10, x0, 00000101
+# ** Note:   x1=00001FFB x2=00000002 x3=00000001 x4=00000002 x5=00002000 x6=0000FF00 x7=00000002 x10=00000101 x13=00002000 x14=0000FF00 x15=0000F00F 
+# ** Note: ** Addr=000003A8, Word=234, Instuction=01F01013, Mnemonic=slli x0, x0, 1F
+# ** Note:   x1=00001FFB x2=00000002 x3=00000001 x4=00000002 x5=00002000 x6=0000FF00 x7=00000002 x10=00000101 x13=00002000 x14=0000FF00 x15=0000F00F 
+# ** Note: ** Addr=000003AC, Word=235, Instuction=00100073, Mnemonic=ebreak
+# ** Note:   x1=00001FFB x2=00000002 x3=00000001 x4=00000002 x5=00002000 x6=0000FF00 x7=00000002 x10=00000101 x13=00002000 x14=0000FF00 x15=0000F00F 
+# ** Note: RVTEST (addi) : OK
+# Break in Process monitor at ../testbench/tb_cpu.vhd line 359
+# Stopped at ../testbench/tb_cpu.vhd line 359
+#  quit -f
+# End time: 00:29:12 on Jan 01,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 57

@@ -1,0 +1,90 @@
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+INST_ROM         0x0000000000000000 0x0000000000001000 xr
+DATA_ROM         0x0000000001000000 0x0000000000001000 xr
+DATA_RAM         0x0000000002000000 0x0000000000000060 xrw
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD /tmp/ccAVr0sq.o
+LOAD /tmp/ccnEulni.o
+
+.text           0x0000000000000000      0x118
+                0x0000000000000000                _stext = .
+ *(.text.init)
+ .text.init     0x0000000000000000       0x98 /tmp/ccAVr0sq.o
+                0x0000000000000000                _reset
+ *(.text .text.*)
+ .text          0x0000000000000098        0x0 /tmp/ccAVr0sq.o
+ .text          0x0000000000000098       0x68 /tmp/ccnEulni.o
+                0x0000000000000098                putchar
+                0x00000000000000c4                print
+ .text.startup  0x0000000000000100       0x18 /tmp/ccnEulni.o
+                0x0000000000000100                main
+                0x0000000000000118                . = ALIGN (0x4)
+                0x0000000000000118                _etext = .
+
+.rodata         0x0000000001000000        0xc
+                0x0000000001000000                _srodata = .
+ *(.rodata .rodata.*)
+ .rodata.str1.4
+                0x0000000001000000        0xa /tmp/ccnEulni.o
+ *(.srodata .srodata.*)
+                0x000000000100000c                . = ALIGN (0x4)
+ *fill*         0x000000000100000a        0x2 
+                0x000000000100000c                _erodata = .
+
+.rela.dyn       0x000000000100000c        0x0
+ .rela.text.init
+                0x000000000100000c        0x0 /tmp/ccAVr0sq.o
+
+.data           0x0000000002000000        0x0 load address 0x000000000100000c
+                0x0000000002000000                _sdata = .
+ *(.data .data.*)
+ .data          0x0000000002000000        0x0 /tmp/ccAVr0sq.o
+ .data          0x0000000002000000        0x0 /tmp/ccnEulni.o
+ *(.sdata .sdata.*)
+                0x0000000002000000                . = ALIGN (0x4)
+                0x0000000002000000                _edata = .
+                0x000000000100000c                _sidata = LOADADDR (.data)
+
+.bss            0x0000000002000000        0x0 load address 0x000000000100000c
+                0x0000000002000000                _sbss = .
+ *(.bss .bss.*)
+ .bss           0x0000000002000000        0x0 /tmp/ccAVr0sq.o
+ .bss           0x0000000002000000        0x0 /tmp/ccnEulni.o
+ *(.sbss .sbss.*)
+ *(COMMON)
+                0x0000000002000000                . = ALIGN (0x4)
+                0x0000000002000000                _ebss = .
+                0x0000000002000060                _stack_top = (ORIGIN (DATA_RAM) + LENGTH (DATA_RAM))
+OUTPUT(firmware.elf elf32-littleriscv)
+
+.riscv.attributes
+                0x0000000000000000       0x1c
+ .riscv.attributes
+                0x0000000000000000       0x1a /tmp/ccAVr0sq.o
+ .riscv.attributes
+                0x000000000000001a       0x1c /tmp/ccnEulni.o
+
+.comment        0x0000000000000000       0x4a
+ .comment       0x0000000000000000       0x4a /tmp/ccnEulni.o
+                                         0x4b (size before relaxing)
+
+Cross Reference Table
+
+Symbol                                            File
+_ebss                                             /tmp/ccAVr0sq.o
+_edata                                            /tmp/ccAVr0sq.o
+_reset                                            /tmp/ccAVr0sq.o
+_sbss                                             /tmp/ccAVr0sq.o
+_sdata                                            /tmp/ccAVr0sq.o
+_sidata                                           /tmp/ccAVr0sq.o
+_stack_top                                        /tmp/ccAVr0sq.o
+main                                              /tmp/ccnEulni.o
+                                                  /tmp/ccAVr0sq.o
+print                                             /tmp/ccnEulni.o
+putchar                                           /tmp/ccnEulni.o

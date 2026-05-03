@@ -1,0 +1,311 @@
+#!/usr/bin/env -S uv run --script
+#
+# wsim
+# David_Harris@hmc.edu 5 April 2024
+# Invoke a Wally simulation for a desired configuration and test suite or ELF on the specified simulator
+# usage: wsim CONFIG TESTSUITE [-s/--sim SIMULATOR] [-g/--gui]
+# example: wsim rv64gc arch64i
+# example: wsim rv64gc tests/riscof/work/riscv-arch-test/rv64i_m/I/src/ref/ref.elf
+# example: wsim rv32i arch32i -s verilator
+# example: wsim fdqh_ieee_rv64gc add -t testbench_fp        # run TestFloat
+#
+# SPDX-License-Identifier: Apache-2.0 WITH SHL-2.1
+
+import argparse
+import fcntl
+import hashlib
+import os
+import sys
+from pathlib import Path
+
+# Global variable
+WALLY = Path(os.environ.get("WALLY", Path(__file__).resolve().parent.parent))
+
+
+def parseArgs():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("config", help="Configuration file")
+    parser.add_argument("testsuite", nargs="?", help="Test suite or path to .elf file")
+    parser.add_argument("--elf", "-e", help="ELF File name; use if name does not end in .elf", default="")
+    parser.add_argument("--sim", "-s", help="Simulator", choices=["questa", "verilator", "vcs"], default="questa")
+    parser.add_argument("--tb", "-t", help="Testbench", choices=["testbench", "testbench_fp"], default="testbench")
+    parser.add_argument("--gui", "-g", help="Simulate with GUI", action="store_true")
+    parser.add_argument("--ccov", "-c", help="Code Coverage", action="store_true")
+    parser.add_argument("--fcov", "-f", help="Functional Coverage; Currently does nothing", action="store_true")
+    parser.add_argument("--args", "-a", help="Optional arguments passed to simulator via $value$plusargs", default="")
+    parser.add_argument("--params", "-p", help="Optional top-level parameter overrides of the form param=value", default="")
+    parser.add_argument("--define", "-d", help="Optional define macros passed to simulator", default="")
+    parser.add_argument("--vcd", "-v", help="Generate testbench.vcd", action="store_true")
+    parser.add_argument("--lockstep", "-l", help="Run ImperasDV lock, step, and compare.", action="store_true")
+    parser.add_argument("--lockstepverbose", "-lv", help="Run ImperasDV lock, step, and compare with tracing enabled", action="store_true")
+    parser.add_argument("--rvvi", "-r", help="Simulate rvvi hardware interface and ethernet.", action="store_true")
+    return parser.parse_args()
+
+
+def validateArgs(args):
+    if not args.testsuite and not args.elf:
+        print("Error: Missing test suite or ELF file")
+        sys.exit(1)
+    if (args.lockstep or args.lockstepverbose) and not ((args.testsuite and args.testsuite.endswith(".elf")) or args.elf) and args.testsuite != "buildroot":
+        print(f"Invalid Options. Cannot run a testsuite, {args.testsuite} with lockstep. Must run a single elf or buildroot.")
+        sys.exit(1)
+    elif args.gui and args.sim != "questa":
+        print("GUI only supported by Questa")
+        sys.exit(1)
+    elif (args.ccov or args.fcov) and args.sim != "questa":
+        print("Coverage only supported by Questa")
+        sys.exit(1)
+    elif any([args.lockstep, args.lockstepverbose]) and args.sim not in ["questa", "vcs"]:
+        print("Lockstep only supported by Questa and VCS")
+        sys.exit(1)
+    elif args.tb == "testbench_fp" and args.sim != "questa":
+        print("Error: testbench_fp presently only supported by Questa, not VCS or Verilator, because of a touchy testbench")
+        sys.exit(1)
+
+
+def elfFileCheck(args):
+    ElfFile = ""
+    if os.path.isfile(args.elf):
+        ElfFile = os.path.abspath(args.elf)
+        args.testsuite = args.elf  # Use the ELF file as the test suite name
+    elif args.elf:
+        print(f"ELF file not found: {args.elf}")
+        sys.exit(1)
+    elif args.testsuite.endswith(".elf"):  # No --elf argument; check if testsuite has a .elf extension and use that instead
+        if os.path.isfile(args.testsuite):
+            ElfFile = os.path.abspath(args.testsuite)
+        else:
+            print(f"ELF file not found: {args.testsuite}")
+            sys.exit(1)
+    # Extract the elf name from the path to be the test suite
+    fields = args.testsuite.rsplit("/", 3)
+    # If the name is just ref.elf in a deep path (riscv-arch-test/wally-riscv-arch-test), then use the directory name as the test suite to make it unique; otherwise work directory will have duplicates.
+    if "breker" in args.testsuite:
+        args.testsuite = fields[-1]
+    elif len(fields) > 3:
+        if fields[2] == "ref":
+            args.testsuite = f"{fields[1]}_{fields[3]}"
+        else:
+            args.testsuite = f"{fields[2]}_{fields[3]}"
+    elif "/" in args.testsuite:
+        args.testsuite = args.testsuite.rsplit("/", 1)[1]  # strip off path if present
+    return ElfFile
+
+
+def prepSim(args, ElfFile):
+    prefix = ""
+    paramsList = []
+    argsList = []
+    flagsList = []
+    defineList = []
+    if args.vcd:
+        paramsList.append("MAKE_VCD=1")
+        if args.sim == "questa":
+            flagsList.append("--vcd")
+    if args.rvvi:
+        paramsList.append("RVVI_SYNTH_SUPPORTED=1")
+    if args.tb == "testbench_fp":
+        paramsList.append(f'TEST="{args.testsuite}"')
+    if ElfFile:
+        argsList.append(f"+ElfFile={ElfFile}")
+    if args.gui and args.tb == "testbench":
+        paramsList.append("DEBUG=1")
+    if args.ccov:
+        flagsList.append("--ccov")
+    # if args.fcov:
+    #     flagsList.append("--fcov")
+    #     defineList.append("+define+FCOV")
+    if args.gui:
+        flagsList.append("--gui")
+    if args.lockstep or args.lockstepverbose:
+        flagsList.append("--lockstep")
+        prefix += lockstepSetup(args)
+        defineList.append("+define+USE_IMPERAS_DV")
+    if "breker" in args.config and args.sim != "verilator":  # Requires a license for the breker tool. See tests/breker/README.md for details
+        ElfFileNoExtension = os.path.splitext(ElfFile)[0]
+        flagsList.append("--breker")
+        defineList.append("+define+USE_TREK_DV")
+        argsList.append(f"+TREK_TBX_FILE={ElfFileNoExtension}.tbx")
+        if "WALLY_UVM_PKG" not in os.environ:
+            prefix += f"WALLY_UVM_PKG={WALLY}/testbench/trek_files/{'rv64' if args.config == 'rv64breker' else 'rv32'}/uvm_output/trek_uvm_pkg.sv"
+    # Combine into a single string
+    args.args += " " + " ".join(argsList)
+    args.params += " " + " ".join(paramsList)
+    args.define += " " + " ".join(defineList)
+    flags = " ".join(flagsList)
+    return flags, prefix
+
+
+def lockstepSetup(args):
+    imperasicSharedPath = WALLY / "config" / "shared" / "imperas-shared.ic"
+    imperasicVerbosePath = WALLY / "sim" / "imperas-verbose.ic"
+    imperasicPath = WALLY / "config" / str(args.config) / "imperas.ic"
+    if not imperasicPath.is_file():  # If config is a derivative, look for imperas.ic in derivative configs
+        imperasicPath = WALLY / "config" / "deriv" / str(args.config) / "imperas.ic"
+        if not imperasicPath.is_file():
+            print("Error: imperas.ic not found")
+            sys.exit(1)
+    prefix = f"IMPERAS_TOOLS={imperasicSharedPath}:{imperasicPath}{f':{imperasicVerbosePath}' if args.lockstepverbose else ''}"
+    return prefix
+
+
+def createDirs(sim: str):
+    for d in ["logs", "wkdir", "cov", "ucdb", "fcov", "fcov_ucdb"]:
+        (WALLY / "sim" / sim / d).mkdir(parents=True, exist_ok=True)
+
+
+def buildHash(*components):
+    """Compute an 8-char hash from compile-time parameters for the workdir suffix."""
+    combined = " ".join(" ".join(str(c) for c in components).split())
+    return hashlib.md5(combined.encode()).hexdigest()[:8] if combined else ""
+
+
+def compileLock(sim_dir, lockname):
+    """Context manager that acquires an exclusive flock for compilation serialization."""
+    lockdir = WALLY / "sim" / sim_dir / "wkdir"
+    lockdir.mkdir(parents=True, exist_ok=True)
+    lockfile = lockdir / f".{lockname}.lock"
+
+    class _Lock:
+        def __enter__(self):
+            self._f = open(lockfile, "w")
+            fcntl.flock(self._f, fcntl.LOCK_EX)
+            return self
+
+        def __exit__(self, *exc):
+            fcntl.flock(self._f, fcntl.LOCK_UN)
+            self._f.close()
+
+    return _Lock()
+
+
+def isDesignUpToDate(target):
+    """Check if a compiled design target is newer than all source/config files.
+    Returns True if the target exists and is newer than all dependencies."""
+    if not target.exists():
+        return False
+    target_mtime = target.stat().st_mtime
+    for ext in ("*.sv", "*.v", "*.svh", "*.vh"):
+        for dep in WALLY.rglob(ext):
+            if dep.stat().st_mtime > target_mtime:
+                return False
+    return True
+
+
+def runSim(args, flags, prefix):
+    if args.sim == "questa":
+        runQuesta(args, flags, prefix)
+    elif args.sim == "verilator":
+        runVerilator(args)
+    elif args.sim == "vcs":
+        runVCS(args, flags, prefix)
+
+
+def runQuesta(args, flags, prefix):
+    # Force Questa to use 64-bit mode, sometimes it defaults to 32-bit even on 64-bit machines
+    prefix = "MTI_VCO_MODE=64 " + prefix
+    sim_dir = "$WALLY/sim/questa"
+
+    # Compute build hash from all compile-time parameters (flags, params, defines)
+    bhash = buildHash(flags, args.params, args.define)
+    wkdir = f"wkdir/{args.config}_{args.tb}{'_' + bhash if bhash else ''}"
+
+    # Build compile-time flag arguments
+    compile_flags = flags
+    if args.params.strip():
+        compile_flags += rf" --params \"{args.params}\""
+    if args.define.strip():
+        compile_flags += rf" --define \"{args.define}\""
+
+    # Phase 1: Compile (only once per config/flags/params/defines combo)
+    print(f"Running Questa on {args.config} {args.testsuite}")
+    wkdir_path = WALLY / "sim" / "questa" / wkdir
+    with compileLock("questa", f"{args.config}_{args.tb}{'_' + bhash if bhash else ''}"):
+        if not isDesignUpToDate(wkdir_path / "testbenchopt"):
+            compile_cmd = f'do wally-compile.do {args.config} {args.tb} {wkdir} {compile_flags}'
+            compile_cmd = f'cd {sim_dir}; {prefix} vsim -c -do "{compile_cmd}"'
+            if os.system(compile_cmd):
+                return
+
+    # Phase 2: Run the simulation
+    run_flags = flags
+    if args.args.strip():
+        run_flags += rf" --args \"{args.args}\""
+    run_cmd = f'do wally-run.do {args.config} {args.testsuite} {args.tb} {wkdir} {run_flags}'
+    run_cmd = f'cd {sim_dir}; {prefix} vsim {"-c" if not args.gui else ""} -do "{run_cmd}"'
+    os.system(run_cmd)
+
+
+def runVerilator(args):
+    print(f"Running Verilator on {args.config} {args.testsuite}")
+    sim_dir = WALLY / "sim" / "verilator"
+    bhash = buildHash(args.params, args.define)
+    workdir = sim_dir / "wkdir" / f"{args.config}_{args.tb}{'_' + bhash if bhash else ''}"
+    binary = workdir / f"V{args.tb}"
+
+    # Phase 1: Compile (only once per config/params/defines combo)
+    compile_cmd = (
+        f'make -C {sim_dir}'
+        f' WALLYCONF={args.config}'
+        f' TESTBENCH={args.tb}'
+        f' PARAM_ARGS="{args.params}"'
+        f' DEFINE_ARGS="{args.define}"'
+        f' BUILD_HASH="{bhash}"'
+    )
+    with compileLock("verilator", f"{args.config}_{args.tb}{'_' + bhash if bhash else ''}"):
+        if not isDesignUpToDate(binary):
+            if os.system(compile_cmd):
+                return
+
+    # Phase 2: Run the simulation (parallel safe)
+    # Run from sim/verilator/ so relative paths (e.g. logs/buildroot_uart.out) resolve correctly
+    (sim_dir / "logs").mkdir(parents=True, exist_ok=True)
+    runtime_args = ""
+    if args.tb == "testbench":
+        runtime_args += f" +TEST={args.testsuite}"
+    if args.args.strip():
+        runtime_args += f" {args.args.strip()}"
+    os.system(f"cd {sim_dir} && {binary}{runtime_args}")
+
+
+def runVCS(args, flags, prefix):
+    print(f"Running VCS on {args.config} {args.testsuite}")
+    sim_dir = "$WALLY/sim/vcs"
+    bhash = buildHash(flags, args.params, args.define)
+    wkdir = f"{WALLY}/sim/vcs/wkdir/{args.config}_{args.tb}{'_' + bhash if bhash else ''}"
+    binary = Path(wkdir) / "sim_out"
+
+    # Build compile-time flag arguments (flags already contains --lockstep, --breker, etc. from prepSim)
+    compile_flags = f"--tb {args.tb} {flags}"
+    if args.params.strip():
+        compile_flags += f' --params "{args.params}"'
+    if args.define.strip():
+        compile_flags += f' --define "{args.define}"'
+
+    # Phase 1: Compile (only once per config/flags/params/defines combo)
+    with compileLock("vcs", f"{args.config}_{args.tb}{'_' + bhash if bhash else ''}"):
+        if not isDesignUpToDate(binary):
+            compile_cmd = f'cd {sim_dir}; {prefix} ./run_vcs compile {args.config} {args.testsuite} --wkdir {wkdir} {compile_flags}'
+            if os.system(compile_cmd):
+                return
+
+    # Phase 2: Run the simulation
+    run_flags = f"--tb {args.tb} {flags}"
+    if args.args.strip():
+        run_flags += f' --args "{args.args}"'
+    run_cmd = f'cd {sim_dir}; {prefix} ./run_vcs run {args.config} {args.testsuite} --wkdir {wkdir} {run_flags}'
+    os.system(run_cmd)
+
+
+def main(args):
+    validateArgs(args)
+    print(f"Config={args.config} tests={args.testsuite} sim={args.sim} gui={args.gui} args='{args.args}' params='{args.params}' define='{args.define}'")
+    ElfFile = elfFileCheck(args)
+    flags, prefix = prepSim(args, ElfFile)
+    createDirs(args.sim)
+    sys.exit(runSim(args, flags, prefix))
+
+
+if __name__ == "__main__":
+    args = parseArgs()
+    main(args)

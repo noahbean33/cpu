@@ -1,0 +1,35 @@
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++#
+# This file is a .ucf for Mimas V2 (http://www.numato.com)                                            #
+# To use it in your project :                                                                         #
+# * Remove or comment the lines corresponding to unused pins in the project.                          #
+# * Rename the used signals according to the your project.                                            #
+# * For more detail refer the User Guide for Mimas V2 available at http://numato.com/fpga-cpld        #
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++#
+#**************************************************************************************************************************************************#
+#                                            UCF for Mimas V2                                                                                      #
+#**************************************************************************************************************************************************#
+CONFIG VCCAUX = "3.3" ;
+
+	NET "CLK"                  		  LOC = V10     | IOSTANDARD = LVCMOS33 | PERIOD = 100MHz ;
+
+
+###################################################################################################################################################
+#                                                 UART Interface                                                                                  #
+################################################################################################################################################### 
+    NET "SER_RX"                      LOC = A8      |IOSTANDARD = LVCMOS33 |DRIVE = 8 |SLEW = FAST ;
+    NET "SER_TX"                      LOC = B8      |IOSTANDARD = LVCMOS33 |DRIVE = 8 |SLEW = FAST ;
+
+###################################################################################################################################################
+#                                                    LEDs                                                                                         #
+################################################################################################################################################## 
+    NET "LEDS[7]"                     LOC = P15     |IOSTANDARD = LVCMOS33 |DRIVE = 8 |SLEW = FAST ;  #D1
+    NET "LEDS[6]"                     LOC = P16     |IOSTANDARD = LVCMOS33 |DRIVE = 8 |SLEW = FAST ;  #D2
+    NET "LEDS[5]"                     LOC = N15     |IOSTANDARD = LVCMOS33 |DRIVE = 8 |SLEW = FAST ;  #D3
+    NET "LEDS[4]"                     LOC = N16     |IOSTANDARD = LVCMOS33 |DRIVE = 8 |SLEW = FAST ;  #D4
+    NET "LEDS[3]"                     LOC = U17     |IOSTANDARD = LVCMOS33 |DRIVE = 8 |SLEW = FAST ;  #D5
+    NET "LEDS[2]"                     LOC = U18     |IOSTANDARD = LVCMOS33 |DRIVE = 8 |SLEW = FAST ;  #D6
+    NET "LEDS[1]"                     LOC = T17     |IOSTANDARD = LVCMOS33 |DRIVE = 8 |SLEW = FAST ;  #D7
+    NET "LEDS[0]"                     LOC = T18     |IOSTANDARD = LVCMOS33 |DRIVE = 8 |SLEW = FAST ;  #D8
+
+    NET "resetn"                LOC = F17     |IOSTANDARD = LVCMOS33 |DRIVE = 8 |SLEW = FAST |PULLUP;  #DP 1
+

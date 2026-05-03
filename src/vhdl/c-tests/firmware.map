@@ -1,0 +1,100 @@
+
+Discarded input sections
+
+ .debug_line    0x0000000000000000       0xa5 /tmp/ccltKAki.o
+ .debug_info    0x0000000000000000       0x26 /tmp/ccltKAki.o
+ .debug_abbrev  0x0000000000000000       0x14 /tmp/ccltKAki.o
+ .debug_aranges
+                0x0000000000000000       0x20 /tmp/ccltKAki.o
+ .debug_str     0x0000000000000000       0x49 /tmp/ccltKAki.o
+ .debug_info    0x0000000000000000       0xec /tmp/cc9O2fNh.o
+ .debug_abbrev  0x0000000000000000       0x93 /tmp/cc9O2fNh.o
+ .debug_aranges
+                0x0000000000000000       0x20 /tmp/cc9O2fNh.o
+ .debug_line    0x0000000000000000       0x72 /tmp/cc9O2fNh.o
+ .debug_str     0x0000000000000000      0x133 /tmp/cc9O2fNh.o
+ .debug_frame   0x0000000000000000       0x5c /tmp/cc9O2fNh.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+INST_ROM         0x0000000000000000 0x0000000000001000 xr
+DATA_ROM         0x0000000001000000 0x0000000000001000 xr
+DATA_RAM         0x0000000002000000 0x0000000000001000 xrw
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD /tmp/ccltKAki.o
+LOAD /tmp/cc9O2fNh.o
+START GROUP
+LOAD /opt/TOOL_CHAIN_COREV/bin/../lib/gcc/riscv32-corev-elf/11.0.0/rv32i/ilp32/libgcc.a
+END GROUP
+
+.text           0x0000000000000000       0xe8
+                0x0000000000000000                _stext = .
+ *(.text .text.*)
+ .text          0x0000000000000000       0x64 /tmp/ccltKAki.o
+                0x0000000000000000                _reset
+ .text          0x0000000000000064       0x84 /tmp/cc9O2fNh.o
+                0x0000000000000064                f
+                0x00000000000000b0                main
+                0x00000000000000e8                . = ALIGN (0x4)
+                0x00000000000000e8                _etext = .
+
+.rela.dyn       0x00000000000000e8        0x0
+ .rela.text     0x00000000000000e8        0x0 /tmp/ccltKAki.o
+
+.rodata         0x0000000001000000        0x0
+                0x0000000001000000                _srodata = .
+ *(.rodata .rodata.*)
+ *(.srodata .srodata.*)
+                0x0000000001000000                . = ALIGN (0x4)
+                0x0000000001000000                _erodata = .
+
+.data           0x0000000002000000        0x0 load address 0x0000000001000000
+                0x0000000002000000                _sdata = .
+ *(.data .data.*)
+ .data          0x0000000002000000        0x0 /tmp/ccltKAki.o
+ .data          0x0000000002000000        0x0 /tmp/cc9O2fNh.o
+ *(.sdata .sdata.*)
+                0x0000000002000000                . = ALIGN (0x4)
+                0x0000000002000000                _edata = .
+                0x0000000001000000                _sidata = LOADADDR (.data)
+
+.bss            0x0000000002000000        0x0 load address 0x0000000001000000
+                0x0000000002000000                _sbss = .
+ *(.bss .bss.*)
+ .bss           0x0000000002000000        0x0 /tmp/ccltKAki.o
+ .bss           0x0000000002000000        0x0 /tmp/cc9O2fNh.o
+ *(.sbss .sbss.*)
+ *(COMMON)
+                0x0000000002000000                . = ALIGN (0x4)
+                0x0000000002000000                _ebss = .
+                0x0000000002001000                _stack_top = (ORIGIN (DATA_RAM) + LENGTH (DATA_RAM))
+OUTPUT(firmware.elf elf32-littleriscv)
+
+.riscv.attributes
+                0x0000000000000000       0x1c
+ .riscv.attributes
+                0x0000000000000000       0x1a /tmp/ccltKAki.o
+ .riscv.attributes
+                0x000000000000001a       0x1c /tmp/cc9O2fNh.o
+
+.comment        0x0000000000000000       0x4a
+ .comment       0x0000000000000000       0x4a /tmp/cc9O2fNh.o
+                                         0x4b (size before relaxing)
+
+Cross Reference Table
+
+Symbol                                            File
+_ebss                                             /tmp/ccltKAki.o
+_edata                                            /tmp/ccltKAki.o
+_reset                                            /tmp/ccltKAki.o
+_sbss                                             /tmp/ccltKAki.o
+_sdata                                            /tmp/ccltKAki.o
+_sidata                                           /tmp/ccltKAki.o
+_stack_top                                        /tmp/ccltKAki.o
+f                                                 /tmp/cc9O2fNh.o
+main                                              /tmp/cc9O2fNh.o
+                                                  /tmp/ccltKAki.o

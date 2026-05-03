@@ -1,0 +1,120 @@
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@0ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@0ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@0ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@0ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@0ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@0ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@0ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@0ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@0ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:1721:7:@0ms:(assertion warning): NUMERIC_STD.">=": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1721:7:@0ms:(assertion warning): NUMERIC_STD.">=": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1721:7:@0ms:(assertion warning): NUMERIC_STD.">=": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1721:7:@0ms:(assertion warning): NUMERIC_STD.">=": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1721:7:@0ms:(assertion warning): NUMERIC_STD.">=": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1721:7:@0ms:(assertion warning): NUMERIC_STD.">=": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1721:7:@0ms:(assertion warning): NUMERIC_STD.">=": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1721:7:@0ms:(assertion warning): NUMERIC_STD.">=": metavalue detected, returning FALSE
+../testbench/tb_cpu.vhd:311:13:@215ns:(report note): [INST] Addr=00000000, Word=0, Instuction=00000093, Mnemonic=addi x1, x0, 00000000
+../testbench/tb_cpu.vhd:311:13:@225ns:(report note): [INST] Addr=00000004, Word=1, Instuction=00000113, Mnemonic=addi x2, x0, 00000000
+../testbench/tb_cpu.vhd:311:13:@235ns:(report note): [INST] Addr=00000008, Word=2, Instuction=00000193, Mnemonic=addi x3, x0, 00000000
+../testbench/tb_cpu.vhd:311:13:@245ns:(report note): [INST] Addr=0000000C, Word=3, Instuction=00000213, Mnemonic=addi x4, x0, 00000000
+../testbench/tb_cpu.vhd:311:13:@255ns:(report note): [INST] Addr=00000010, Word=4, Instuction=00000293, Mnemonic=addi x5, x0, 00000000
+../testbench/tb_cpu.vhd:311:13:@265ns:(report note): [INST] Addr=00000014, Word=5, Instuction=00000313, Mnemonic=addi x6, x0, 00000000
+../testbench/tb_cpu.vhd:311:13:@275ns:(report note): [INST] Addr=00000018, Word=6, Instuction=00000393, Mnemonic=addi x7, x0, 00000000
+../testbench/tb_cpu.vhd:311:13:@285ns:(report note): [INST] Addr=0000001C, Word=7, Instuction=00000413, Mnemonic=addi x8, x0, 00000000
+../testbench/tb_cpu.vhd:311:13:@295ns:(report note): [INST] Addr=00000020, Word=8, Instuction=00000493, Mnemonic=addi x9, x0, 00000000
+../testbench/tb_cpu.vhd:311:13:@305ns:(report note): [INST] Addr=00000024, Word=9, Instuction=00000513, Mnemonic=addi x10, x0, 00000000
+../testbench/tb_cpu.vhd:311:13:@315ns:(report note): [INST] Addr=00000028, Word=10, Instuction=00000593, Mnemonic=addi x11, x0, 00000000
+../testbench/tb_cpu.vhd:311:13:@325ns:(report note): [INST] Addr=0000002C, Word=11, Instuction=00000613, Mnemonic=addi x12, x0, 00000000
+../testbench/tb_cpu.vhd:311:13:@335ns:(report note): [INST] Addr=00000030, Word=12, Instuction=00000693, Mnemonic=addi x13, x0, 00000000
+../testbench/tb_cpu.vhd:311:13:@345ns:(report note): [INST] Addr=00000034, Word=13, Instuction=00000713, Mnemonic=addi x14, x0, 00000000
+../testbench/tb_cpu.vhd:311:13:@355ns:(report note): [INST] Addr=00000038, Word=14, Instuction=00000793, Mnemonic=addi x15, x0, 00000000
+../testbench/tb_cpu.vhd:311:13:@365ns:(report note): [INST] Addr=0000003C, Word=15, Instuction=00000813, Mnemonic=addi x16, x0, 00000000
+../testbench/tb_cpu.vhd:311:13:@375ns:(report note): [INST] Addr=00000040, Word=16, Instuction=00000893, Mnemonic=addi x17, x0, 00000000
+../testbench/tb_cpu.vhd:311:13:@385ns:(report note): [INST] Addr=00000044, Word=17, Instuction=00000913, Mnemonic=addi x18, x0, 00000000
+../testbench/tb_cpu.vhd:311:13:@395ns:(report note): [INST] Addr=00000048, Word=18, Instuction=00000993, Mnemonic=addi x19, x0, 00000000
+../testbench/tb_cpu.vhd:311:13:@405ns:(report note): [INST] Addr=0000004C, Word=19, Instuction=00000A13, Mnemonic=addi x20, x0, 00000000
+../testbench/tb_cpu.vhd:311:13:@415ns:(report note): [INST] Addr=00000050, Word=20, Instuction=00000A93, Mnemonic=addi x21, x0, 00000000
+../testbench/tb_cpu.vhd:311:13:@425ns:(report note): [INST] Addr=00000054, Word=21, Instuction=00000B13, Mnemonic=addi x22, x0, 00000000
+../testbench/tb_cpu.vhd:311:13:@435ns:(report note): [INST] Addr=00000058, Word=22, Instuction=00000B93, Mnemonic=addi x23, x0, 00000000
+../testbench/tb_cpu.vhd:311:13:@445ns:(report note): [INST] Addr=0000005C, Word=23, Instuction=00000C13, Mnemonic=addi x24, x0, 00000000
+../testbench/tb_cpu.vhd:311:13:@455ns:(report note): [INST] Addr=00000060, Word=24, Instuction=00000C93, Mnemonic=addi x25, x0, 00000000
+../testbench/tb_cpu.vhd:311:13:@465ns:(report note): [INST] Addr=00000064, Word=25, Instuction=00000D13, Mnemonic=addi x26, x0, 00000000
+../testbench/tb_cpu.vhd:311:13:@475ns:(report note): [INST] Addr=00000068, Word=26, Instuction=00000D93, Mnemonic=addi x27, x0, 00000000
+../testbench/tb_cpu.vhd:311:13:@485ns:(report note): [INST] Addr=0000006C, Word=27, Instuction=00000E13, Mnemonic=addi x28, x0, 00000000
+../testbench/tb_cpu.vhd:311:13:@495ns:(report note): [INST] Addr=00000070, Word=28, Instuction=00000E93, Mnemonic=addi x29, x0, 00000000
+../testbench/tb_cpu.vhd:311:13:@505ns:(report note): [INST] Addr=00000074, Word=29, Instuction=00000F13, Mnemonic=addi x30, x0, 00000000
+../testbench/tb_cpu.vhd:311:13:@515ns:(report note): [INST] Addr=00000078, Word=30, Instuction=00000F93, Mnemonic=addi x31, x0, 00000000
+../testbench/tb_cpu.vhd:311:13:@525ns:(report note): [INST] Addr=0000007C, Word=31, Instuction=01000297, Mnemonic=auipc x5, 01000000
+../testbench/tb_cpu.vhd:316:15:@525ns:(report note): [REGS] x5=0100007C 
+../testbench/tb_cpu.vhd:311:13:@535ns:(report note): [INST] Addr=00000080, Word=32, Instuction=F8428293, Mnemonic=addi x5, x5, FFFFFF84
+../testbench/tb_cpu.vhd:316:15:@535ns:(report note): [REGS] x5=01000000 
+../testbench/tb_cpu.vhd:311:13:@545ns:(report note): [INST] Addr=00000084, Word=33, Instuction=02000317, Mnemonic=auipc x6, 02000000
+../testbench/tb_cpu.vhd:316:15:@545ns:(report note): [REGS] x5=01000000 x6=02000084 
+../testbench/tb_cpu.vhd:311:13:@555ns:(report note): [INST] Addr=00000088, Word=34, Instuction=F7C30313, Mnemonic=addi x6, x6, FFFFFF7C
+../testbench/tb_cpu.vhd:316:15:@555ns:(report note): [REGS] x5=01000000 x6=02000000 
+../testbench/tb_cpu.vhd:311:13:@565ns:(report note): [INST] Addr=0000008C, Word=35, Instuction=02000397, Mnemonic=auipc x7, 02000000
+../testbench/tb_cpu.vhd:316:15:@565ns:(report note): [REGS] x5=01000000 x6=02000000 x7=0200008C 
+../testbench/tb_cpu.vhd:311:13:@575ns:(report note): [INST] Addr=00000090, Word=36, Instuction=F7438393, Mnemonic=addi x7, x7, FFFFFF74
+../testbench/tb_cpu.vhd:316:15:@575ns:(report note): [REGS] x5=01000000 x6=02000000 x7=02000000 
+../testbench/tb_cpu.vhd:311:13:@585ns:(report note): [INST] Addr=00000094, Word=37, Instuction=00730C63, Mnemonic=beq x6, x7, 00000018
+../testbench/tb_cpu.vhd:316:15:@585ns:(report note): [REGS] x5=01000000 x6=02000000 x7=02000000 
+../testbench/tb_cpu.vhd:311:13:@595ns:(report note): [INST] Addr=000000AC, Word=43, Instuction=02000297, Mnemonic=auipc x5, 02000000
+../testbench/tb_cpu.vhd:316:15:@595ns:(report note): [REGS] x5=020000AC x6=02000000 x7=02000000 
+../testbench/tb_cpu.vhd:311:13:@605ns:(report note): [INST] Addr=000000B0, Word=44, Instuction=F5428293, Mnemonic=addi x5, x5, FFFFFF54
+../testbench/tb_cpu.vhd:316:15:@605ns:(report note): [REGS] x5=02000000 x6=02000000 x7=02000000 
+../testbench/tb_cpu.vhd:311:13:@615ns:(report note): [INST] Addr=000000B4, Word=45, Instuction=02000317, Mnemonic=auipc x6, 02000000
+../testbench/tb_cpu.vhd:316:15:@615ns:(report note): [REGS] x5=02000000 x6=020000B4 x7=02000000 
+../testbench/tb_cpu.vhd:311:13:@625ns:(report note): [INST] Addr=000000B8, Word=46, Instuction=F4C30313, Mnemonic=addi x6, x6, FFFFFF4C
+../testbench/tb_cpu.vhd:316:15:@625ns:(report note): [REGS] x5=02000000 x6=02000000 x7=02000000 
+../testbench/tb_cpu.vhd:311:13:@635ns:(report note): [INST] Addr=000000BC, Word=47, Instuction=00000393, Mnemonic=addi x7, x0, 00000000
+../testbench/tb_cpu.vhd:316:15:@635ns:(report note): [REGS] x5=02000000 x6=02000000 
+../testbench/tb_cpu.vhd:311:13:@645ns:(report note): [INST] Addr=000000C0, Word=48, Instuction=00628863, Mnemonic=beq x5, x6, 00000010
+../testbench/tb_cpu.vhd:316:15:@645ns:(report note): [REGS] x5=02000000 x6=02000000 
+../testbench/tb_cpu.vhd:311:13:@655ns:(report note): [INST] Addr=000000D0, Word=52, Instuction=00200193, Mnemonic=addi x3, x0, 00000002
+../testbench/tb_cpu.vhd:316:15:@655ns:(report note): [REGS] x3=00000002 x5=02000000 x6=02000000 
+../testbench/tb_cpu.vhd:311:13:@665ns:(report note): [INST] Addr=000000D4, Word=53, Instuction=00000013, Mnemonic=addi x0, x0, 00000000
+../testbench/tb_cpu.vhd:316:15:@665ns:(report note): [REGS] x3=00000002 x5=02000000 x6=02000000 
+../testbench/tb_cpu.vhd:311:13:@675ns:(report note): [INST] Addr=000000D8, Word=54, Instuction=00002517, Mnemonic=auipc x10, 00002000
+../testbench/tb_cpu.vhd:316:15:@675ns:(report note): [REGS] x3=00000002 x5=02000000 x6=02000000 x10=000020D8 
+../testbench/tb_cpu.vhd:311:13:@685ns:(report note): [INST] Addr=000000DC, Word=55, Instuction=71C50513, Mnemonic=addi x10, x10, 0000071C
+../testbench/tb_cpu.vhd:316:15:@685ns:(report note): [REGS] x3=00000002 x5=02000000 x6=02000000 x10=000027F4 
+../testbench/tb_cpu.vhd:311:13:@695ns:(report note): [INST] Addr=000000E0, Word=56, Instuction=004005EF, Mnemonic=jal x11, 00000004
+../testbench/tb_cpu.vhd:316:15:@695ns:(report note): [REGS] x3=00000002 x5=02000000 x6=02000000 x10=000027F4 x11=000000E4 
+../testbench/tb_cpu.vhd:311:13:@705ns:(report note): [INST] Addr=000000E4, Word=57, Instuction=40B50533, Mnemonic=sub x10, x10, x11
+../testbench/tb_cpu.vhd:316:15:@705ns:(report note): [REGS] x3=00000002 x5=02000000 x6=02000000 x10=00002710 x11=000000E4 
+../testbench/tb_cpu.vhd:311:13:@715ns:(report note): [INST] Addr=000000E8, Word=58, Instuction=000023B7, Mnemonic=lui x7, 00002000
+../testbench/tb_cpu.vhd:316:15:@715ns:(report note): [REGS] x3=00000002 x5=02000000 x6=02000000 x7=00002000 x10=00002710 x11=000000E4 
+../testbench/tb_cpu.vhd:311:13:@725ns:(report note): [INST] Addr=000000EC, Word=59, Instuction=71038393, Mnemonic=addi x7, x7, 00000710
+../testbench/tb_cpu.vhd:316:15:@725ns:(report note): [REGS] x3=00000002 x5=02000000 x6=02000000 x7=00002710 x10=00002710 x11=000000E4 
+../testbench/tb_cpu.vhd:311:13:@735ns:(report note): [INST] Addr=000000F0, Word=60, Instuction=02751463, Mnemonic=bne x10, x7, 00000028
+../testbench/tb_cpu.vhd:316:15:@735ns:(report note): [REGS] x3=00000002 x5=02000000 x6=02000000 x7=00002710 x10=00002710 x11=000000E4 
+../testbench/tb_cpu.vhd:311:13:@745ns:(report note): [INST] Addr=000000F4, Word=61, Instuction=00300193, Mnemonic=addi x3, x0, 00000003
+../testbench/tb_cpu.vhd:316:15:@745ns:(report note): [REGS] x3=00000003 x5=02000000 x6=02000000 x7=00002710 x10=00002710 x11=000000E4 
+../testbench/tb_cpu.vhd:311:13:@755ns:(report note): [INST] Addr=000000F8, Word=62, Instuction=FFFFE517, Mnemonic=auipc x10, FFFFE000
+../testbench/tb_cpu.vhd:316:15:@755ns:(report note): [REGS] x3=00000003 x5=02000000 x6=02000000 x7=00002710 x10=FFFFE0F8 x11=000000E4 
+../testbench/tb_cpu.vhd:311:13:@765ns:(report note): [INST] Addr=000000FC, Word=63, Instuction=8FC50513, Mnemonic=addi x10, x10, FFFFF8FC
+../testbench/tb_cpu.vhd:316:15:@765ns:(report note): [REGS] x3=00000003 x5=02000000 x6=02000000 x7=00002710 x10=FFFFD9F4 x11=000000E4 
+../testbench/tb_cpu.vhd:311:13:@775ns:(report note): [INST] Addr=00000100, Word=64, Instuction=004005EF, Mnemonic=jal x11, 00000004
+../testbench/tb_cpu.vhd:316:15:@775ns:(report note): [REGS] x3=00000003 x5=02000000 x6=02000000 x7=00002710 x10=FFFFD9F4 x11=00000104 
+../testbench/tb_cpu.vhd:311:13:@785ns:(report note): [INST] Addr=00000104, Word=65, Instuction=40B50533, Mnemonic=sub x10, x10, x11
+../testbench/tb_cpu.vhd:316:15:@785ns:(report note): [REGS] x3=00000003 x5=02000000 x6=02000000 x7=00002710 x10=FFFFD8F0 x11=00000104 
+../testbench/tb_cpu.vhd:311:13:@795ns:(report note): [INST] Addr=00000108, Word=66, Instuction=FFFFE3B7, Mnemonic=lui x7, FFFFE000
+../testbench/tb_cpu.vhd:316:15:@795ns:(report note): [REGS] x3=00000003 x5=02000000 x6=02000000 x7=FFFFE000 x10=FFFFD8F0 x11=00000104 
+../testbench/tb_cpu.vhd:311:13:@805ns:(report note): [INST] Addr=0000010C, Word=67, Instuction=8F038393, Mnemonic=addi x7, x7, FFFFF8F0
+../testbench/tb_cpu.vhd:316:15:@805ns:(report note): [REGS] x3=00000003 x5=02000000 x6=02000000 x7=FFFFD8F0 x10=FFFFD8F0 x11=00000104 
+../testbench/tb_cpu.vhd:311:13:@815ns:(report note): [INST] Addr=00000110, Word=68, Instuction=00751463, Mnemonic=bne x10, x7, 00000008
+../testbench/tb_cpu.vhd:316:15:@815ns:(report note): [REGS] x3=00000003 x5=02000000 x6=02000000 x7=FFFFD8F0 x10=FFFFD8F0 x11=00000104 
+../testbench/tb_cpu.vhd:311:13:@825ns:(report note): [INST] Addr=00000114, Word=69, Instuction=00301E63, Mnemonic=bne x0, x3, 0000001C
+../testbench/tb_cpu.vhd:316:15:@825ns:(report note): [REGS] x3=00000003 x5=02000000 x6=02000000 x7=FFFFD8F0 x10=FFFFD8F0 x11=00000104 
+../testbench/tb_cpu.vhd:311:13:@835ns:(report note): [INST] Addr=00000130, Word=76, Instuction=00100193, Mnemonic=addi x3, x0, 00000001
+../testbench/tb_cpu.vhd:316:15:@835ns:(report note): [REGS] x3=00000001 x5=02000000 x6=02000000 x7=FFFFD8F0 x10=FFFFD8F0 x11=00000104 
+../testbench/tb_cpu.vhd:311:13:@845ns:(report note): [INST] Addr=00000134, Word=77, Instuction=10100513, Mnemonic=addi x10, x0, 00000101
+../testbench/tb_cpu.vhd:316:15:@845ns:(report note): [REGS] x3=00000001 x5=02000000 x6=02000000 x7=FFFFD8F0 x10=00000101 x11=00000104 
+../testbench/tb_cpu.vhd:311:13:@855ns:(report note): [INST] Addr=00000138, Word=78, Instuction=01F01013, Mnemonic=slli x0, x0, 1F
+../testbench/tb_cpu.vhd:316:15:@855ns:(report note): [REGS] x3=00000001 x5=02000000 x6=02000000 x7=FFFFD8F0 x10=00000101 x11=00000104 
+../testbench/tb_cpu.vhd:311:13:@865ns:(report note): [INST] Addr=0000013C, Word=79, Instuction=00100073, Mnemonic=ebreak
+../testbench/tb_cpu.vhd:316:15:@865ns:(report note): [REGS] x3=00000001 x5=02000000 x6=02000000 x7=FFFFD8F0 x10=00000101 x11=00000104 
+../testbench/tb_cpu.vhd:330:13:@865ns:(report note): RVTEST (addi) : OK
+simulation stopped @865ns with status 0

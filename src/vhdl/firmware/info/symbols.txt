@@ -1,0 +1,14 @@
+00000000 T _reset
+00000000 T _stext
+00000098 T putchar
+000000c4 T print
+00000100 T main
+00000118 T _etext
+01000000 R _srodata
+0100000c R _erodata
+0100000c A _sidata
+02000000 B _ebss
+02000000 D _edata
+02000000 B _sbss
+02000000 D _sdata
+02000060 B _stack_top

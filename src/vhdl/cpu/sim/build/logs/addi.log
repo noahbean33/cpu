@@ -1,0 +1,79 @@
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@0ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@0ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@0ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@0ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@0ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@0ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@0ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@0ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@0ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@0ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@0ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@0ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@0ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@0ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@0ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@0ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@0ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@0ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@0ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@0ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@0ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../testbench/tb_cpu.vhd:340:13:@215ns:(report note): ** Addr=00000000, Word=0, Instuction=00000093, Mnemonic=addi x1, x0, 00000000
+../testbench/tb_cpu.vhd:340:13:@225ns:(report note): ** Addr=00000004, Word=1, Instuction=00000093, Mnemonic=addi x1, x0, 00000000
+../testbench/tb_cpu.vhd:340:13:@235ns:(report note): ** Addr=00000008, Word=2, Instuction=00000113, Mnemonic=addi x2, x0, 00000000
+../testbench/tb_cpu.vhd:340:13:@245ns:(report note): ** Addr=0000000C, Word=3, Instuction=00000193, Mnemonic=addi x3, x0, 00000000
+../testbench/tb_cpu.vhd:340:13:@255ns:(report note): ** Addr=00000010, Word=4, Instuction=00000213, Mnemonic=addi x4, x0, 00000000
+../testbench/tb_cpu.vhd:340:13:@265ns:(report note): ** Addr=00000014, Word=5, Instuction=00000293, Mnemonic=addi x5, x0, 00000000
+../testbench/tb_cpu.vhd:340:13:@275ns:(report note): ** Addr=00000018, Word=6, Instuction=00000313, Mnemonic=addi x6, x0, 00000000
+../testbench/tb_cpu.vhd:340:13:@285ns:(report note): ** Addr=0000001C, Word=7, Instuction=00000393, Mnemonic=addi x7, x0, 00000000
+../testbench/tb_cpu.vhd:340:13:@295ns:(report note): ** Addr=00000020, Word=8, Instuction=00000413, Mnemonic=addi x8, x0, 00000000
+../testbench/tb_cpu.vhd:340:13:@305ns:(report note): ** Addr=00000024, Word=9, Instuction=00000493, Mnemonic=addi x9, x0, 00000000
+../testbench/tb_cpu.vhd:340:13:@315ns:(report note): ** Addr=00000028, Word=10, Instuction=00000513, Mnemonic=addi x10, x0, 00000000
+../testbench/tb_cpu.vhd:340:13:@325ns:(report note): ** Addr=0000002C, Word=11, Instuction=00000593, Mnemonic=addi x11, x0, 00000000
+../testbench/tb_cpu.vhd:340:13:@335ns:(report note): ** Addr=00000030, Word=12, Instuction=00000613, Mnemonic=addi x12, x0, 00000000
+../testbench/tb_cpu.vhd:340:13:@345ns:(report note): ** Addr=00000034, Word=13, Instuction=00000693, Mnemonic=addi x13, x0, 00000000
+../testbench/tb_cpu.vhd:340:13:@355ns:(report note): ** Addr=00000038, Word=14, Instuction=00000713, Mnemonic=addi x14, x0, 00000000
+../testbench/tb_cpu.vhd:340:13:@365ns:(report note): ** Addr=0000003C, Word=15, Instuction=00000793, Mnemonic=addi x15, x0, 00000000
+../testbench/tb_cpu.vhd:340:13:@375ns:(report note): ** Addr=00000040, Word=16, Instuction=00000813, Mnemonic=addi x16, x0, 00000000
+../testbench/tb_cpu.vhd:340:13:@385ns:(report note): ** Addr=00000044, Word=17, Instuction=00000893, Mnemonic=addi x17, x0, 00000000
+../testbench/tb_cpu.vhd:340:13:@395ns:(report note): ** Addr=00000048, Word=18, Instuction=00000913, Mnemonic=addi x18, x0, 00000000
+../testbench/tb_cpu.vhd:340:13:@405ns:(report note): ** Addr=0000004C, Word=19, Instuction=00000993, Mnemonic=addi x19, x0, 00000000
+../testbench/tb_cpu.vhd:340:13:@415ns:(report note): ** Addr=00000050, Word=20, Instuction=00000A13, Mnemonic=addi x20, x0, 00000000
+../testbench/tb_cpu.vhd:340:13:@425ns:(report note): ** Addr=00000054, Word=21, Instuction=00000A93, Mnemonic=addi x21, x0, 00000000
+../testbench/tb_cpu.vhd:340:13:@435ns:(report note): ** Addr=00000058, Word=22, Instuction=00000B13, Mnemonic=addi x22, x0, 00000000
+../testbench/tb_cpu.vhd:340:13:@445ns:(report note): ** Addr=0000005C, Word=23, Instuction=00000B93, Mnemonic=addi x23, x0, 00000000
+../testbench/tb_cpu.vhd:340:13:@455ns:(report note): ** Addr=00000060, Word=24, Instuction=00000C13, Mnemonic=addi x24, x0, 00000000
+../testbench/tb_cpu.vhd:340:13:@465ns:(report note): ** Addr=00000064, Word=25, Instuction=00000C93, Mnemonic=addi x25, x0, 00000000
+../testbench/tb_cpu.vhd:340:13:@475ns:(report note): ** Addr=00000068, Word=26, Instuction=00000D13, Mnemonic=addi x26, x0, 00000000
+../testbench/tb_cpu.vhd:340:13:@485ns:(report note): ** Addr=0000006C, Word=27, Instuction=00000D93, Mnemonic=addi x27, x0, 00000000
+../testbench/tb_cpu.vhd:340:13:@495ns:(report note): ** Addr=00000070, Word=28, Instuction=00000E13, Mnemonic=addi x28, x0, 00000000
+../testbench/tb_cpu.vhd:340:13:@505ns:(report note): ** Addr=00000074, Word=29, Instuction=00000E93, Mnemonic=addi x29, x0, 00000000
+../testbench/tb_cpu.vhd:340:13:@515ns:(report note): ** Addr=00000078, Word=30, Instuction=00000F13, Mnemonic=addi x30, x0, 00000000
+../testbench/tb_cpu.vhd:340:13:@525ns:(report note): ** Addr=0000007C, Word=31, Instuction=00000F93, Mnemonic=addi x31, x0, 00000000
+../testbench/tb_cpu.vhd:340:13:@535ns:(report note): ** Addr=00000080, Word=32, Instuction=00001297, Mnemonic=auipc x5, 00001000
+../testbench/tb_cpu.vhd:345:15:@535ns:(report note): ****x5=00001080 
+../testbench/tb_cpu.vhd:340:13:@545ns:(report note): ** Addr=00000084, Word=33, Instuction=F8428293, Mnemonic=addi x5, x5, FFFFFF84
+../testbench/tb_cpu.vhd:345:15:@545ns:(report note): ****x5=00001004 
+../testbench/tb_cpu.vhd:340:13:@555ns:(report note): ** Addr=00000088, Word=34, Instuction=00002317, Mnemonic=auipc x6, 00002000
+../testbench/tb_cpu.vhd:345:15:@555ns:(report note): ****x5=00001004 x6=00002088 
+../testbench/tb_cpu.vhd:340:13:@565ns:(report note): ** Addr=0000008C, Word=35, Instuction=F7C30313, Mnemonic=addi x6, x6, FFFFFF7C
+../testbench/tb_cpu.vhd:345:15:@565ns:(report note): ****x5=00001004 x6=00002004 
+../testbench/tb_cpu.vhd:340:13:@575ns:(report note): ** Addr=00000090, Word=36, Instuction=00002397, Mnemonic=auipc x7, 00002000
+../testbench/tb_cpu.vhd:345:15:@575ns:(report note): ****x5=00001004 x6=00002004 x7=00002090 
+../testbench/tb_cpu.vhd:340:13:@585ns:(report note): ** Addr=00000094, Word=37, Instuction=F7438393, Mnemonic=addi x7, x7, FFFFFF74
+../testbench/tb_cpu.vhd:345:15:@585ns:(report note): ****x5=00001004 x6=00002004 x7=00002004 
+../testbench/tb_cpu.vhd:340:13:@595ns:(report note): ** Addr=00000098, Word=38, Instuction=00730C63, Mnemonic=beq x6, x7, 00000018
+../testbench/tb_cpu.vhd:345:15:@595ns:(report note): ****x5=00001004 x6=00002004 x7=00002004 
+../testbench/tb_cpu.vhd:340:13:@605ns:(report note): ** Addr=000000B0, Word=44, Instuction=0002AE03, Mnemonic=lw x28, 00000000(x5)
+../testbench/tb_cpu.vhd:345:15:@605ns:(report note): ****x5=00001004 x6=00002004 x7=00002004 
+../testbench/tb_cpu.vhd:350:13:@605ns:(report note): ** Addr=00001004, Word=1025, WData=00000000, RData=00000000
+../testbench/tb_cpu.vhd:340:13:@615ns:(report note): ** Addr=000000B4, Word=45, Instuction=F5428293, Mnemonic=addi x5, x5, FFFFFF54
+../testbench/tb_cpu.vhd:345:15:@615ns:(report note): ****x5=00000F58 x6=00002004 x7=00002004 
+../testbench/tb_cpu.vhd:340:13:@625ns:(report note): ** Addr=000000B8, Word=46, Instuction=00002317, Mnemonic=auipc x6, 00002000
+../testbench/tb_cpu.vhd:345:15:@625ns:(report note): ****x5=00000F58 x6=000020B8 x7=00002004 
+../testbench/tb_cpu.vhd:340:13:@635ns:(report note): ** Addr=000000BC, Word=47, Instuction=F4C30313, Mnemonic=addi x6, x6, FFFFFF4C
+../testbench/tb_cpu.vhd:345:15:@635ns:(report note): ****x5=00000F58 x6=00002004 x7=00002004 
+.\tb_cpu.exe:error: bound check failure at ../../src/ieee2008/numeric_std-body.vhdl:3042
+in process .tb_cpu(sim).data_mem@data_memory(behavioral).P2
+.\tb_cpu.exe:error: simulation failed

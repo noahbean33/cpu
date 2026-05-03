@@ -1,0 +1,69 @@
+
+firmware.elf:     file format elf32-littleriscv
+
+
+Disassembly of section .text:
+
+00000000 <_reset>:
+   0:	02001117          	auipc	sp,0x2001
+   4:	00010113          	addi	sp,sp,0 # 2001000 <_stack_top>
+   8:	01000297          	auipc	t0,0x1000
+   c:	ff828293          	addi	t0,t0,-8 # 1000000 <_erodata>
+  10:	02000317          	auipc	t1,0x2000
+  14:	ff030313          	addi	t1,t1,-16 # 2000000 <_ebss>
+  18:	02000397          	auipc	t2,0x2000
+  1c:	fe838393          	addi	t2,t2,-24 # 2000000 <_ebss>
+  20:	00730c63          	beq	t1,t2,38 <_reset+0x38>
+  24:	0002ae03          	lw	t3,0(t0)
+  28:	01c32023          	sw	t3,0(t1)
+  2c:	00428293          	addi	t0,t0,4
+  30:	00430313          	addi	t1,t1,4
+  34:	fedff06f          	jal	zero,20 <_reset+0x20>
+  38:	02000317          	auipc	t1,0x2000
+  3c:	fc830313          	addi	t1,t1,-56 # 2000000 <_ebss>
+  40:	02000397          	auipc	t2,0x2000
+  44:	fc038393          	addi	t2,t2,-64 # 2000000 <_ebss>
+  48:	00000e13          	addi	t3,zero,0
+  4c:	00730863          	beq	t1,t2,5c <_reset+0x5c>
+  50:	01c32023          	sw	t3,0(t1)
+  54:	00430313          	addi	t1,t1,4
+  58:	ff5ff06f          	jal	zero,4c <_reset+0x4c>
+  5c:	054000ef          	jal	ra,b0 <main>
+  60:	0000006f          	jal	zero,60 <_reset+0x60>
+
+00000064 <f>:
+  64:	fd010113          	addi	sp,sp,-48
+  68:	02812623          	sw	s0,44(sp)
+  6c:	03010413          	addi	s0,sp,48
+  70:	fca42e23          	sw	a0,-36(s0)
+  74:	fcb42c23          	sw	a1,-40(s0)
+  78:	fcc42a23          	sw	a2,-44(s0)
+  7c:	fdc42703          	lw	a4,-36(s0)
+  80:	fd842783          	lw	a5,-40(s0)
+  84:	00f707b3          	add	a5,a4,a5
+  88:	fef42623          	sw	a5,-20(s0)
+  8c:	fec42703          	lw	a4,-20(s0)
+  90:	fd442783          	lw	a5,-44(s0)
+  94:	00f707b3          	add	a5,a4,a5
+  98:	fef42423          	sw	a5,-24(s0)
+  9c:	fe842783          	lw	a5,-24(s0)
+  a0:	00078513          	addi	a0,a5,0
+  a4:	02c12403          	lw	s0,44(sp)
+  a8:	03010113          	addi	sp,sp,48
+  ac:	00008067          	jalr	zero,0(ra)
+
+000000b0 <main>:
+  b0:	fe010113          	addi	sp,sp,-32
+  b4:	00112e23          	sw	ra,28(sp)
+  b8:	00812c23          	sw	s0,24(sp)
+  bc:	02010413          	addi	s0,sp,32
+  c0:	00300613          	addi	a2,zero,3
+  c4:	00200593          	addi	a1,zero,2
+  c8:	00100513          	addi	a0,zero,1
+  cc:	f99ff0ef          	jal	ra,64 <f>
+  d0:	fea42623          	sw	a0,-20(s0)
+  d4:	00000013          	addi	zero,zero,0
+  d8:	01c12083          	lw	ra,28(sp)
+  dc:	01812403          	lw	s0,24(sp)
+  e0:	02010113          	addi	sp,sp,32
+  e4:	00008067          	jalr	zero,0(ra)

@@ -1,0 +1,3 @@
+
+firmware.elf:     file format elf32-littleriscv
+

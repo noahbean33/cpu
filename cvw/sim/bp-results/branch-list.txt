@@ -1,0 +1,12 @@
+bpred_GSHARE_6_16_10_1_rv32gc_embench.log gshare 6
+bpred_GSHARE_8_16_10_1_rv32gc_embench.log gshare 8
+bpred_GSHARE_10_16_10_1_rv32gc_embench.log gshare 10
+bpred_GSHARE_12_16_10_1_rv32gc_embench.log gshare 12
+bpred_GSHARE_14_16_10_1_rv32gc_embench.log gshare 14
+bpred_GSHARE_16_16_10_1_rv32gc_embench.log gshare 16
+bpred_TWOBIT_6_16_10_1_rv32gc_embench.log twobit 6
+bpred_TWOBIT_8_16_10_1_rv32gc_embench.log twobit 8
+bpred_TWOBIT_10_16_10_1_rv32gc_embench.log twobit 10
+bpred_TWOBIT_12_16_10_1_rv32gc_embench.log twobit 12
+bpred_TWOBIT_14_16_10_1_rv32gc_embench.log twobit 14
+bpred_TWOBIT_16_16_10_1_rv32gc_embench.log twobit 16
