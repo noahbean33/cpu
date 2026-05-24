@@ -1,2 +1,0 @@
-#!/bin/bash
-vsim -c -do fulladder-batch.do

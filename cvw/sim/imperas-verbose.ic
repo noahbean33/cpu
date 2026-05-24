@@ -1,3 +1,0 @@
-# Add Imperas simulator application instruction tracing
---verbose --trace --tracechange --traceshowicount --tracemode --tracemem XSL --monitornetschange # --traceafter 300000000
---override cpu/debugflags=6 --override cpu/verbose=1

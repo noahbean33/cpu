@@ -1,3 +1,0 @@
-#!/bin/bash
-verilator --binary --top-module testbench --trace fulladder.sv
-obj_dir/Vtestbench
